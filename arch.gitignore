@@ -1,0 +1,17 @@
+# Android
+build/
+.gradle/
+*.apk
+*.aab
+
+# iOS
+**/ios/Pods/
+**/ios/DerivedData/
+*.ipa
+
+# Geral
+node_modules/
+.DS_Store
+*.zip
+*.tar
+*.log
