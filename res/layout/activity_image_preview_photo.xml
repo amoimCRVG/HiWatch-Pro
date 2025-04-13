@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.previewlibrary.wight.PhotoViewPager android:id="@id/viewPager" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/ltAddDot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip" android:text="1/2" />
+    <com.previewlibrary.wight.BezierBannerView android:layout_gravity="bottom|center" android:id="@id/bezierBannerView" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:selectedColor="@android:color/white" app:selectedRaduis="4.0dip" app:spacing="6.0dip" app:unSelectedColor="@android:color/darker_gray" app:unSelectedRaduis="4.0dip" />
+</FrameLayout>

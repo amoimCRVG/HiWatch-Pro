@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/item_white_gray_selector" android:layout_width="fill_parent" android:layout_height="@dimen/item_height" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:id="@id/tv_name" android:text="name" style="@style/Text.Common" />
+        <TextView android:textSize="@dimen/textSize14" android:textColor="@color/textColorDef" android:id="@id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="address" />
+    </LinearLayout>
+    <TextView android:layout_gravity="center|right" android:id="@id/tv_rssi" android:text="-56dBm" style="@style/Text.Common" />
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/frag_home" android:layout_width="fill_parent" android:layout_height="@dimen/dp_0" android:layout_weight="1.0" android:elevation="@dimen/dp_5" />
+    <include layout="@layout/include_tab_bottom" style="@style/menu_bottom_nav1_style" />
+    <include layout="@layout/include_tab_bottom2" style="@style/menu_bottom_nav2_style" />
+</LinearLayout>

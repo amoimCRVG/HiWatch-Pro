@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/start_page_root_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/frm_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="80.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" style="@style/start_page_logo_img_style" />
+        <TextView android:textSize="30.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/welcome_tv_style" />
+    </FrameLayout>
+    <xfkj.fitpro.view.skin.SkinImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@mipmap/colacao_start_page_logo" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/frm_logo" app:skin_image_show="@bool/isShow_welcome_logo2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

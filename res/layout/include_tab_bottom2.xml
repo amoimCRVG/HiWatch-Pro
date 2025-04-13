@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:gravity="bottom" android:orientation="horizontal" android:id="@id/grp_nav2" android:background="@color/bottom_nav_bg_color" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:id="@id/rad2_1" android:checked="true" android:text="@string/step_txt" android:drawableTop="@drawable/ui_home_selector" style="@style/bottom_nav_rad_style" />
+    <RadioButton android:id="@id/rad2_2" android:text="@string/more_txt" android:drawableTop="@drawable/ui_device_selector" style="@style/bottom_nav_rad_style" />
+    <RadioButton android:id="@id/rad2_3" android:text="@string/sport_txt" android:drawableTop="@drawable/ui_sport_selector" style="@style/bottom_nav_rad_style" />
+    <RadioButton android:id="@id/rad2_4" android:text="@string/mine_txt" android:drawableTop="@drawable/ui_mine_selector" style="@style/bottom_nav_rad_style" />
+</RadioGroup>

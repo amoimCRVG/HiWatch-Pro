@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/rtk_support_toolbar" />
+    <com.google.android.material.card.MaterialCardView android:id="@id/locationCardView" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/mtrl_card_spacing">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/material_black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rtk_support_permission_title_location" android:layout_weight="1.0" style="?textAppearanceHeadline5" />
+                <com.google.android.material.button.MaterialButton android:textColor="@color/colorPrimary" android:id="@id/btnSetLocation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_support_permission_button_set" android:drawablePadding="@dimen/margin_small" android:drawableEnd="@mipmap/rtk_support_ic_arrow_right" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            </LinearLayout>
+            <TextView android:gravity="center_vertical" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rtk_support_permission_subtitle_location" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView android:id="@id/notificationCardView" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/mtrl_card_spacing">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/material_black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rtk_support_permission_title_notification" android:layout_weight="1.0" style="?textAppearanceHeadline5" />
+                <com.google.android.material.button.MaterialButton android:textColor="@color/colorPrimary" android:id="@id/btnSetNotification" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_support_permission_button_set" android:drawablePadding="@dimen/margin_small" android:drawableEnd="@mipmap/rtk_support_ic_arrow_right" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            </LinearLayout>
+            <TextView android:gravity="center_vertical" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rtk_support_permission_subtitle_notiifcation" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView android:id="@id/batteryOptimizationCardView" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/mtrl_card_spacing">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/material_black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rtk_support_permission_title_battery_optimize" android:layout_weight="1.0" style="?textAppearanceHeadline5" />
+                <com.google.android.material.button.MaterialButton android:textColor="@color/colorPrimary" android:id="@id/btnSetBatteryOptimize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_support_permission_button_set" android:drawablePadding="@dimen/margin_small" android:drawableEnd="@mipmap/rtk_support_ic_arrow_right" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            </LinearLayout>
+            <TextView android:gravity="center_vertical" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rtk_support_permission_subtitle_battery_optimize" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView android:id="@id/backgroundRunningCardView" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/mtrl_card_spacing">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textColor="@color/material_black" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/rtk_support_permission_title_background_running" android:layout_weight="1.0" style="?textAppearanceHeadline5" />
+                <com.google.android.material.button.MaterialButton android:textColor="@color/colorPrimary" android:id="@id/btnSetBackgroundRunning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_support_permission_button_set" android:drawablePadding="@dimen/margin_small" android:drawableEnd="@mipmap/rtk_support_ic_arrow_right" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+            </LinearLayout>
+            <TextView android:gravity="center_vertical" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rtk_support_permission_subtitle_background_running" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

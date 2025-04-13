@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/theme_color" android:layout_width="fill_parent" android:layout_height="150.0dip">
+        <ImageView android:id="@id/img_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_15" android:layout_marginBottom="@dimen/dp_10" android:src="@mipmap/equipment_hp_icon" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <xfkj.fitpro.view.RxRunTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="left" android:id="@id/tv_status" android:layout_width="140.0dip" android:layout_height="wrap_content" android:text="@string/unconnected" android:layout_alignLeft="@id/tv_device_version" android:layout_alignTop="@id/img_device" style="@style/textview_marquee_style" />
+        <xfkj.fitpro.view.RxRunTextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="left" android:id="@id/tv_device_version" android:layout_width="140.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="N/A" android:layout_below="@id/tv_status" android:layout_alignParentRight="true" style="@style/textview_marquee_style" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_12" android:paddingRight="@dimen/dp_12" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/card_bind" android:background="@drawable/fg_device_bind_bg" style="@style/fg_device_bind_style">
+                <xfkj.fitpro.view.RxRunTextView android:textColor="@color/white" android:gravity="left" android:id="@id/tv_bind" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bind_device_more" android:drawableRight="@mipmap/home_hh_right_icon" style="@style/textview_marquee_style" />
+            </FrameLayout>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" style="@style/common_cardview_style">
+                <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <xfkj.fitpro.view.RxRunTextView android:id="@id/tv_hand_light" android:text="@string/lift_screen" android:drawableTop="@mipmap/equipment_bs_icon" style="@style/device_frag_func1_style" />
+                    <xfkj.fitpro.view.RxRunTextView android:id="@id/tv_disturb" android:text="@string/disturb_title" android:drawableTop="@mipmap/equipment_rd_icon" style="@style/device_frag_func1_style" />
+                    <xfkj.fitpro.view.RxRunTextView android:id="@id/tv_alarms" android:text="@string/alarm_set" android:drawableTop="@mipmap/equipment_ac_icon" style="@style/device_frag_func1_style" />
+                    <xfkj.fitpro.view.RxRunTextView android:id="@id/tv_long_sit" android:text="@string/long_sit" android:drawableTop="@mipmap/equipment_sedentary_icon" style="@style/device_frag_func1_style" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@id/card_pay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:minHeight="58.0dip" style="@style/common_cardview_style">
+                <TextView android:layout_gravity="center|left" android:text="@string/wallet" android:drawableLeft="@mipmap/equipment_wallet_icon" style="@style/device_frag_func2_style" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@id/card_bt_call" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:minHeight="58.0dip" style="@style/common_cardview_style">
+                <TextView android:layout_gravity="center|left" android:text="@string/bt_call_settings" android:drawableLeft="@mipmap/bp" style="@style/device_frag_func2_style" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@id/card_find" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:minHeight="58.0dip" style="@style/common_cardview_style">
+                <TextView android:layout_gravity="center|left" android:text="@string/find_device_txt" android:drawableLeft="@mipmap/equipment_le_icon" style="@style/device_frag_func2_style" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@id/card_remote_camera" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:minHeight="58.0dip" style="@style/common_cardview_style">
+                <TextView android:layout_gravity="center|left" android:text="@string/take_photos_txt" android:drawableLeft="@mipmap/equipment_rc_icon" style="@style/device_frag_func2_style" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:id="@id/card_other" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginBottom="@dimen/dp_15" style="@style/common_cardview_style">
+                <LinearLayout android:orientation="vertical" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@id/tv_msg_push" android:text="@string/push_setting_txt" android:drawableLeft="@mipmap/equipment_ap_icon" style="@style/device_frag_func3_style" />
+                    <View style="@style/device_line_style" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_daily_contract" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@id/tv_sync_contracts" android:text="@string/sync_contracts_txt" android:drawableLeft="@mipmap/equipment_fc_icon" style="@style/device_frag_func3_style" />
+                        <View style="@style/device_line_style" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_clock_dial_settings" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@id/tv_clock_dial_settings" android:text="@string/clock_dial_settings" android:drawableLeft="@mipmap/equipment_td_icon" style="@style/device_frag_func3_style" />
+                        <View style="@style/device_line_style" />
+                    </LinearLayout>
+                    <TextView android:id="@id/tv_reset_device" android:text="@string/device_reset_txt" android:drawableLeft="@mipmap/equipment_dr_icon" style="@style/device_frag_func3_style" />
+                    <View style="@style/device_line_style" />
+                    <TextView android:id="@id/tv_unbind_device" android:text="@string/del_device_txt" android:drawableLeft="@mipmap/equipment_rb_icon" style="@style/device_frag_func3_style" />
+                    <View style="@style/device_line_style" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_other_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:id="@id/tv_other" android:text="@string/other_setting_txt" android:drawableLeft="@mipmap/equipment_of_icon" style="@style/device_frag_func3_style" />
+                        <View style="@style/device_line_style" />
+                    </LinearLayout>
+                    <xfkj.fitpro.view.DotTextView android:id="@id/tv_ota" android:text="@string/ota_upgrade" android:drawableLeft="@mipmap/device_update" app:dotGravity="rightCenter" app:dotOffsetX="@dimen/dp_10" app:showDot="false" style="@style/device_frag_func3_style" />
+                    <View style="@style/device_line_style" />
+                    <TextView android:id="@id/tv_background_settings" android:text="@string/background_settings" android:drawableLeft="@mipmap/equipment_of_icon" style="@style/device_frag_func3_style" />
+                    <View android:visibility="gone" style="@style/device_line_style" />
+                    <TextView android:id="@id/tv_change_skin" android:visibility="gone" android:text="@string/change_skin" android:drawableLeft="@mipmap/equipment_skinpeeler_icon" style="@style/device_frag_func3_style" />
+                    <View style="@style/device_line_style" />
+                    <TextView android:id="@id/mj_yinsi" android:text="@string/yinsi_settings" android:drawableLeft="@mipmap/yinsi_icon" style="@style/device_frag_func3_style" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <FrameLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:textColor="@color/white" android:id="@id/btn_go_bind" android:layout_width="97.0dip" android:layout_height="39.0dip" android:layout_marginRight="14.0dip" />
+                <RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="121.0dip" android:layout_height="121.0dip" android:layout_centerVertical="true">
+                        <ImageView android:layout_gravity="center" android:id="@id/img_connect_status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                        <TextView android:id="@id/tv_status2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_disconnected" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <xfkj.fitpro.view.BatteryView android:gravity="center" android:id="@id/batterView" android:background="@color/transparent" android:layout_width="25.0dip" android:layout_height="13.0dip" android:layout_marginLeft="5.0dip" app:batteryBatteryColor="#ff8555a1" app:batteryColor="@color/white" app:batteryHeaderColor="@color/white" app:batteryOrientation="horizontal" app:batteryPower="0" />
+                        </LinearLayout>
+                        <TextView android:textSize="12.0sp" android:textColor="#ff8555a1" android:gravity="left" android:id="@id/tv_device_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="00:00:00:00:00:00" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/ll_light_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

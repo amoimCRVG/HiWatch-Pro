@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View android:background="@drawable/bigo_ad_flash" android:layout_width="64.0dip" android:layout_height="44.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

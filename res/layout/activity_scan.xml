@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/gray_white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@id/toolbar" android:background="@color/theme_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:title="选择设备" app:titleTextColor="@color/white">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="end" android:id="@id/tv_scan_status" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜索" android:layout_marginEnd="6.0dip" />
+    </com.google.android.material.appbar.MaterialToolbar>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lay_operate" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar">
+        <TextView android:textColor="@color/black" android:id="@id/tv_operate_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="请选择设备！" android:layout_weight="1.0" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" />
+        <com.google.android.material.button.MaterialButton android:textColor="@color/white" android:id="@id/btn_submit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" android:layout_marginEnd="16.0dip" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_device" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/lay_operate" android:overScrollMode="never" />
+    <include android:id="@id/empty_lay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" layout="@layout/empty_lay" />
+    <include android:id="@id/request_bluetooth_scan_lay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" layout="@layout/android12_should_scan_lay" />
+    <include android:id="@id/enable_location_lay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" layout="@layout/should_enable_location" />
+    <include android:id="@id/request_location_lay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" layout="@layout/should_location_lay" />
+    <include android:id="@id/enable_bluetooth_lay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" layout="@layout/should_enable_bluetooth" />
+    <include android:id="@id/request_bluetooth_connect_lay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" layout="@layout/android12_should_connect_lay" />
+</RelativeLayout>

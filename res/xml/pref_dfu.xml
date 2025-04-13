@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="Settings"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/pref_category_title_battery" app:iconSpaceReserved="false">
+        <SwitchPreference android:title="@string/pref_title_dfu_battery_check" android:key="switch_dfu_battery_check" android:summaryOn="@string/pref_title_dfu_battery_check_summary_on" android:summaryOff="@string/pref_title_dfu_battery_check_summary_off" android:switchTextOn="@string/rtk_switchTextOn" android:switchTextOff="@string/rtk_switchTextOff" app:iconSpaceReserved="false" />
+        <com.realsil.sdk.support.settings.RtkListPreference android:entries="@array/dfu_battery_low_threshold_entries" android:title="@string/pref_title_dfu_battery_low_threshold" android:key="dfu_battery_low_threshold" android:summary="{v}" android:entryValues="@array/dfu_battery_low_threshold_values" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_category_title_version" app:iconSpaceReserved="false">
+        <SwitchPreference android:title="@string/pref_title_dfu_version_check" android:key="switch_dfu_version_check" android:summaryOn="@string/pref_title_dfu_version_check_summary_on" android:summaryOff="@string/pref_title_dfu_version_check_summary_off" android:switchTextOn="@string/rtk_switchTextOn" android:switchTextOff="@string/rtk_switchTextOff" app:iconSpaceReserved="false" />
+        <com.realsil.sdk.support.settings.RtkListPreference android:entries="@array/dfu_version_check_mode_entries" android:title="@string/pref_title_dfu_version_check_mode" android:key="dfu_version_check_mode" android:summary="{v}" android:entryValues="@array/dfu_version_check_mode_values" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_title_dfu" app:iconSpaceReserved="false">
+        <EditTextPreference android:title="@string/pref_title_dfu_file_suffix" android:key="rtk_dfu_file_suffix" android:summary="{v}" android:dialogTitle="@string/pref_title_dfu_file_suffix" android:inputType="text" app:iconSpaceReserved="false" />
+        <SwitchPreference android:title="@string/pref_title_dfu_automatic_active" android:key="switch_dfu_automatic_active" android:summary="是否打开我呢？" android:summaryOn="@string/pref_title_dfu_automatic_active_summary_on" android:summaryOff="@string/pref_title_dfu_automatic_active_summary_off" android:switchTextOn="@string/rtk_switchTextOn" android:switchTextOff="@string/rtk_switchTextOff" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

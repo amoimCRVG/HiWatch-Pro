@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/habbit_add_item_bg_color" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/habbit_add_item_txt1_color" android:id="@id/tv_habbit_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:text="@string/breakfast" android:layout_toLeftOf="@id/imgbtn_add_habbit" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/textview_marquee_style" />
+    <ImageButton android:id="@id/imgbtn_add_habbit" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_health_habbit_add" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

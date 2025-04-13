@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_title" android:text="指针表盘" style="@style/watch_theme2_item_title_style" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/item_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

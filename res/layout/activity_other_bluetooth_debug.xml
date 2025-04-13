@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_bar" layout="@layout/include_title" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="设置睡眠开始时间" android:onClick="onClickSetStartTimeOfSleep" app:layout_constraintTop_toBottomOf="@id/title_bar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

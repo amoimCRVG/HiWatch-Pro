@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/action_scan_mode_dual" android:title="@string/rtksdk_scan_mode_dual" />
+    <item android:id="@id/action_scan_mode_gatt" android:title="@string/rtksdk_scan_mode_gatt" />
+    <item android:id="@id/action_scan_mode_gatt_strict" android:title="@string/rtksdk_scan_mode_gatt_strict" />
+    <item android:id="@id/action_scan_mode_spp" android:title="@string/rtksdk_scan_mode_spp" />
+    <item android:id="@id/action_scan_mode_spp_strict" android:title="@string/rtksdk_scan_mode_spp_strict" />
+</menu>

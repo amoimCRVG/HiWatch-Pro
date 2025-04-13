@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_title" />
+    <androidx.appcompat.widget.SearchView android:textColor="#ff909090" android:id="@id/searchView" android:background="@drawable/shape_music_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" app:queryHint="@string/input_friendids" app:searchIcon="@mipmap/voin_sech" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff2e303b" android:gravity="center_vertical" android:id="@id/tv_input_friend_id_add" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/input_friend_ids_add" android:drawableLeft="@mipmap/voin_scan" android:drawableRight="@mipmap/home_right_icon" android:drawablePadding="10.0dip" />
+    <View android:background="#fff0f1f6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff2e303b" android:gravity="center_vertical" android:id="@id/tv_qrcode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/scan_qrcode_add" android:drawableLeft="@mipmap/voin_scan" android:drawableRight="@mipmap/home_right_icon" android:drawablePadding="10.0dip" />
+</LinearLayout>

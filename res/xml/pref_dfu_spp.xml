@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Settings"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/pref_category_title_connection" app:iconSpaceReserved="false">
+        <SwitchPreference android:title="@string/pref_title_pair" android:key="switch_dfu_spp_connection_pair" android:summaryOn="@string/pref_summary_on_spp_connection_pair" android:summaryOff="@string/pref_summary_off_spp_connection_pair" android:switchTextOn="@string/rtk_switchTextOn" android:switchTextOff="@string/rtk_switchTextOff" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

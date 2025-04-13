@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rtk_td_dependence_lib_item">&lt;tr>&lt;td>%1$s:%2$s&lt;/td> &lt;td>:%3$s&lt;/td>&lt;/tr></string>
+    <string name="rtk_td_device_info_item">&lt;tr>&lt;td>%1$s%2$s&lt;/td> &lt;td>%3$s&lt;/td>&lt;/tr></string>
+    <string name="rtk_td_device_info_item_warn">&lt;tr>&lt;td>%1$s%2$s&lt;/td> &lt;td>%3$s&lt;/td>&lt;/tr></string>
+</resources>

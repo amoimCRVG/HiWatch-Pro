@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <xfkj.fitpro.view.RxRunTextView android:textSize="12.0sp" android:textColor="#ff2e303b" android:id="@id/tv_add_friend_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:text="@string/add_user_list_label" android:layout_toLeftOf="@id/ll_right_container" android:layout_centerVertical="true" style="@style/textview_marquee_style" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_right_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <Button android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/btn_agree" android:background="@drawable/shape_chat_agree" android:layout_width="45.0dip" android:layout_height="23.0dip" android:text="@string/agree" />
+        <Button android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/btn_reject" android:background="@drawable/shape_chat_reject" android:layout_width="45.0dip" android:layout_height="23.0dip" android:layout_marginLeft="10.0dip" android:text="@string/reject" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffacabaf" android:id="@id/tv_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wait_agree" />
+    </LinearLayout>
+</RelativeLayout>

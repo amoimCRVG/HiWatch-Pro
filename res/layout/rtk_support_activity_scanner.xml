@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/rtk_support_toolbar" />
+    <TextView android:id="@id/tv_device_bluetooth_address" android:padding="@dimen/margin_small" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rtksdk_device_bluetooth_address" />
+    <TextView android:textColor="@color/material_white" android:id="@id/tvLocationTip" android:background="@color/material_red_500" android:padding="@dimen/margin_small" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rtk_support_location_off_tip" android:drawableEnd="@mipmap/rtk_support_ic_arrow_right" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/devices_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

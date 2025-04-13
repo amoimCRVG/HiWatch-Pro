@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_sex" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_gender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="16.0sp" android:textColor="@color/personinfo_page2_txt_color1" android:id="@id/tv_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sex" />
+        <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/radioGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dip">
+            <RadioButton android:id="@id/radiobtn_man" android:layout_marginRight="33.0dip" android:checked="true" android:text="@string/iam_man" android:drawableTop="@drawable/selector_man" style="@style/user_info_sub_radiobtn_style" />
+            <RadioButton android:id="@id/radiobtn_wman" android:layout_marginLeft="33.0dip" android:text="@string/iam_woman" android:drawableTop="@drawable/selector_wman" style="@style/user_info_sub_radiobtn_style" />
+        </RadioGroup>
+    </LinearLayout>
+    <Button android:id="@id/btn_sex_ok" android:text="@string/ok" style="@style/user_info_sub_button_style" />
+</LinearLayout>

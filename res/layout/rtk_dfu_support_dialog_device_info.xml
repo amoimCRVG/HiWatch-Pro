@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/DfuBottomSheetDialog" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:background="@color/colorPrimary" layout="@layout/rtk_toolbar" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/mTabLayout" android:background="@color/colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:tabBackground="@color/colorPrimary" app:tabGravity="fill" app:tabIndicatorColor="@color/colorAccent" app:tabIndicatorHeight="2.0dip" app:tabMode="fixed" app:tabSelectedTextColor="@color/colorAccent" app:tabTextColor="@color/material_white" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/mViewPager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

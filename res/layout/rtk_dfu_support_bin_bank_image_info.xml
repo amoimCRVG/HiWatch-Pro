@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/dfu_divider_horizontal_line" android:showDividers="middle" android:dividerPadding="@dimen/dfu_margin_small">
+        <LinearLayout android:orientation="vertical" android:id="@id/tlSingleImage" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_detail_file_info_sub_file_type" />
+                <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="start|center" android:id="@id/tvImageType" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" style="@style/DfuSubText" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_detail_file_info_sub_file_size" />
+                <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="start|center" android:id="@id/tvImageSize" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" style="@style/DfuSubText" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_detail_file_info_sub_file_version" />
+                <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="start|center" android:id="@id/tvImageVersion" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" style="@style/DfuSubText" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/mRecyclerView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

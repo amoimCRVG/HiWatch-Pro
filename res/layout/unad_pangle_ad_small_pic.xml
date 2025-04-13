@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/ad_contentPanel" android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:id="@id/iv_listitem_small_image" android:layout_width="100.0dip" android:layout_height="fill_parent" android:src="@drawable/tt_ad_cover_btn_begin_bg" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/iv_listitem_small_image" android:layout_centerVertical="true" android:layout_toStartOf="@id/iv_listitem_small_image">
+            <TextView android:textSize="18.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/tv_listitem_ad_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingMultiplier="1.1" />
+            <RelativeLayout android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginTop="3.0dip" android:paddingEnd="10.0dip">
+                <ImageView android:id="@id/iv_listitem_icon" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:src="@drawable/tt_mute" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentStart="true" />
+                <TextView android:textSize="16.0sp" android:textColor="#70000000" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_listitem_ad_source" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/iv_listitem_dislike" android:layout_toRightOf="@id/iv_listitem_icon" android:layout_centerVertical="true" android:layout_toStartOf="@id/iv_listitem_dislike" android:layout_toEndOf="@id/iv_listitem_icon" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_listitem_dislike" android:focusable="true" android:visibility="invisible" android:clickable="true" android:layout_width="20.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/unad_pangle_dislike_icon" android:layout_alignParentRight="true" android:layout_marginStart="10.0dip" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/ad_title_creative_btn_layout" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/ad_contentPanel" layout="@layout/unad_pangle_ad_title_creative_btn_layout" />
+</RelativeLayout>

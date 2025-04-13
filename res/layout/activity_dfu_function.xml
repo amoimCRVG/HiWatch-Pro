@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/rtk_toolbar" />
+    <androidx.slidingpanelayout.widget.SlidingPaneLayout android:id="@id/slidePanelLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.fragment.app.FragmentContainerView android:name="com.realsil.ota.settings.FunctionSettingsFragment" android:id="@id/fragment_function" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:enabled="false" android:textColor="@color/material_white" android:id="@id/btnUpload" android:background="@drawable/rtk_button_selector" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target" android:layout_marginTop="@dimen/margin_medium" android:text="@string/rtkbt_ota_dfu_action_upload" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" />
+                    <Button android:textColor="@color/material_white" android:id="@id/btnStop" android:background="@drawable/rtk_button_warning" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target" android:layout_marginTop="@dimen/margin_medium" android:text="@string/button_stop" android:layout_marginStart="@dimen/margin_medium" android:layout_marginEnd="@dimen/margin_medium" />
+                    <com.realsil.sdk.dfu.support.view.ProgressView android:id="@id/mMessageView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_medium" />
+                    <LinearLayout android:orientation="vertical" android:background="@color/material_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:divider="@drawable/rtk_divider_horizontal_line" android:showDividers="middle" android:dividerPadding="@dimen/margin_small">
+                        <com.realsil.sdk.support.view.SettingsItem android:gravity="center_vertical" android:id="@id/mDeviceView" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target" fab:subTextColor="@color/material_grey_500" fab:subTextSize="12.0sp" fab:subTextVisible="true" fab:text="@string/rtk_dfu_text_target_device" fab:textSize="14.0sp" style="@style/TvView" />
+                        <com.realsil.sdk.support.view.SettingsItem android:gravity="center_vertical" android:id="@id/mWorkModeView" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target" fab:subTextColor="@color/material_grey_500" fab:subTextSize="12.0sp" fab:subTextVisible="true" fab:text="@string/rtk_dfu_text_work_mode" fab:textSize="14.0sp" style="@style/TvView" />
+                        <com.realsil.sdk.support.view.SettingsItem android:gravity="center_vertical" android:id="@id/mFilePathView" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target" fab:subTextColor="@color/material_grey_500" fab:subTextMaxLines="3" fab:subTextSize="12.0sp" fab:subTextVisible="true" fab:text="@string/rtk_dfu_text_file_path" fab:textSize="14.0sp" style="@style/TvView" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+            <com.github.clans.fab.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fabSettings" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_margin="@dimen/fab_margin" android:src="@mipmap/ic_menu_settings" android:tint="@color/material_white" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" fab:fabSize="normal" fab:fab_label="@string/toolbar_text_channel_gatt" />
+        </RelativeLayout>
+    </androidx.slidingpanelayout.widget.SlidingPaneLayout>
+</LinearLayout>

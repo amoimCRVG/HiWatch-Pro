@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/dfu_margin_large" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/dfu_divider_horizontal_line" android:showDividers="middle" android:dividerPadding="@dimen/dfu_margin_small">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/mImageVersionRecyclerView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

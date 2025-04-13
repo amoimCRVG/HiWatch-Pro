@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="BodyFatIndexLabelMarkArray">
+        <item>@string/thin</item>
+        <item>@string/a_thin</item>
+        <item>@string/stantard</item>
+        <item>@string/a_fat</item>
+        <item>@string/fat</item>
+    </string-array>
+    <string-array name="BodyIndexLabelMarkArray">
+        <item>@string/light</item>
+        <item>@string/health</item>
+        <item>@string/more_weight</item>
+        <item>@string/fat</item>
+    </string-array>
+    <string-array name="BodyIndexMarkArray">
+        <item>3.5</item>
+        <item>9</item>
+        <item>13</item>
+    </string-array>
+    <string-array name="BodyManFatIndexMarkArray">
+        <item>8</item>
+        <item>13</item>
+        <item>18</item>
+        <item>23</item>
+    </string-array>
+    <string-array name="BodyWoMenFatIndexMarkArray">
+        <item>18</item>
+        <item>23</item>
+        <item>28</item>
+        <item>33</item>
+    </string-array>
+    <string-array name="al_exo_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>@string/al_exo_controls_playback_speed_normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <integer-array name="al_exo_speed_multiplied_by_100">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+        <item>200</item>
+    </integer-array>
+    <string-array name="bt_guide_connect_txt">
+        <item>@string/bt_guide_common_txt</item>
+        <item>@string/bt_guide_connect_txt1</item>
+        <item>@string/bt_guide_connect_txt2</item>
+    </string-array>
+    <string-array name="bt_guide_disconnect_txt">
+        <item>@string/bt_guide_common_txt</item>
+        <item>@string/bt_guide_disconnect_txt1</item>
+        <item>@string/bt_guide_disconnect_txt2</item>
+    </string-array>
+    <string-array name="bt_guide_settings_txt">
+        <item>@string/bt_guide_common_txt</item>
+        <item>@string/bt_guide_settings_txt1</item>
+        <item>@string/bt_guide_settings_txt2</item>
+    </string-array>
+    <string-array name="clock_dial_titles">
+        <item>@string/mo_ren</item>
+        <item>@string/tui_jian</item>
+    </string-array>
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+    <string-array name="com_google_android_gms_fonts_certs_dev">
+        <item>MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=</item>
+    </string-array>
+    <string-array name="com_google_android_gms_fonts_certs_prod">
+        <item>MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK</item>
+    </string-array>
+    <array name="connection_error_code">
+        <item>@array/connection_error_code_0</item>
+        <item>@array/connection_error_code_1</item>
+        <item>@array/connection_error_code_2</item>
+        <item>@array/connection_error_code_3</item>
+        <item>@array/connection_error_code_4</item>
+        <item>@array/connection_error_code_5</item>
+        <item>@array/connection_error_code_6</item>
+    </array>
+    <string-array name="connection_error_code_0">
+        <item>0</item>
+        <item>Establish connection failed</item>
+        <item>1. Remote User Terminated Connection(HCI_Disconnect, 0x0406)</item>
+    </string-array>
+    <string-array name="connection_error_code_1">
+        <item>1</item>
+        <item>GATT_DISCOVERY_FAIL</item>
+        <item>1. discovery gatt service failed</item>
+    </string-array>
+    <string-array name="connection_error_code_2">
+        <item>2</item>
+        <item>GET_SERVICE_FAIL</item>
+        <item>1. service not supported</item>
+    </string-array>
+    <string-array name="connection_error_code_3">
+        <item>3</item>
+        <item>OTA_SERVICE_LOSS</item>
+        <item>1. ota service loss</item>
+    </string-array>
+    <string-array name="connection_error_code_4">
+        <item>4</item>
+        <item>GET_CHARA_FAIL</item>
+        <item>1. get characteristic failed</item>
+    </string-array>
+    <string-array name="connection_error_code_5">
+        <item>5</item>
+        <item>READ_CHAR_ERROR</item>
+        <item>1. read characteristic failed</item>
+    </string-array>
+    <string-array name="connection_error_code_6">
+        <item>6</item>
+        <item>SPP_CONNECTION_FAIL</item>
+        <item>1. establish SPP connection failed</item>
+    </string-array>
+    <string-array name="dfu_battery_check_format_entries">
+        <item>Percentage</item>
+        <item>Value</item>
+    </string-array>
+    <string-array name="dfu_battery_check_format_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="dfu_battery_low_threshold_entries">
+        <item>30%</item>
+        <item>40%</item>
+        <item>50%</item>
+        <item>60%</item>
+    </string-array>
+    <string-array name="dfu_battery_low_threshold_values">
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="dfu_ble_phy_entries">
+        <item>NORMAL(1M)</item>
+        <item>HIGH_SPEED(2M)</item>
+        <item>PHY_LONG_RANGE_X2(OPTION_S2)</item>
+        <item>PHY_LONG_RANGE_X4(OPTION_S8)</item>
+    </string-array>
+    <string-array name="dfu_ble_phy_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="dfu_buffer_check_level_entries">
+        <item>Automatic</item>
+        <item>Oringal(Default)</item>
+        <item>Round</item>
+        <item>Round Slow(x1)</item>
+        <item>Round Slow(x2)</item>
+        <item>Round Slow(x3)</item>
+    </string-array>
+    <string-array name="dfu_buffer_check_level_values">
+        <item>0</item>
+        <item>16</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+    </string-array>
+    <string-array name="dfu_dump_bitmask_entries">
+        <item>System Config</item>
+        <item>Rom Patch</item>
+        <item>App</item>
+        <item>Dsp System</item>
+        <item>Dsp App</item>
+        <item>FTL</item>
+    </string-array>
+    <string-array name="dfu_dump_bitmask_values">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+        <item>16</item>
+        <item>32</item>
+    </string-array>
+    <string-array name="dfu_file_content_entries">
+        <item>Prompt</item>
+        <item>Full</item>
+    </string-array>
+    <string-array name="dfu_file_content_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="dfu_file_location_entries">
+        <item>Sdcard</item>
+        <item>Assets</item>
+    </string-array>
+    <string-array name="dfu_file_location_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="dfu_file_type">
+        <item>app</item>
+        <item>config</item>
+        <item>patch</item>
+        <item>user</item>
+    </string-array>
+    <string-array name="dfu_production_priotiry_work_mode_entries">
+        <item>Normal Pref</item>
+        <item>Silent Pref</item>
+    </string-array>
+    <string-array name="dfu_production_priotiry_work_mode_values">
+        <item>0</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="dfu_progress_type_entries">
+        <item>OverAll</item>
+        <item>Separate</item>
+    </string-array>
+    <string-array name="dfu_progress_type_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="dfu_speed_control_level_entries">
+        <item>Unlimited(Default)</item>
+        <item>Slow(x1)</item>
+        <item>Slow(x2)</item>
+        <item>Slow(x3)</item>
+        <item>Slow(x4)</item>
+        <item>Slow(x5)</item>
+        <item>Slow(x6)</item>
+    </string-array>
+    <string-array name="dfu_speed_control_level_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="dfu_usb_gatt_endpoint_entries">
+        <item>Control</item>
+        <item>Bulk</item>
+    </string-array>
+    <string-array name="dfu_usb_gatt_endpoint_values">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="dfu_version_check_mechanism_entries">
+        <item>No Check</item>
+        <item>Low Version Warning</item>
+    </string-array>
+    <string-array name="dfu_version_check_mechanism_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="dfu_version_check_mode_entries">
+        <item>STRICT</item>
+        <item>LOOSE</item>
+    </string-array>
+    <string-array name="dfu_version_check_mode_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="dis_unite">
+        <item>@string/km</item>
+        <item>@string/mi</item>
+    </string-array>
+    <array name="error_code">
+        <item>@array/error_code_256</item>
+        <item>@array/error_code_257</item>
+        <item>@array/error_code_258</item>
+        <item>@array/error_code_259</item>
+        <item>@array/error_code_260</item>
+        <item>@array/error_code_261</item>
+        <item>@array/error_code_262</item>
+        <item>@array/error_code_263</item>
+        <item>@array/error_code_264</item>
+        <item>@array/error_code_265</item>
+        <item>@array/error_code_266</item>
+        <item>@array/error_code_267</item>
+        <item>@array/error_code_268</item>
+        <item>@array/error_code_269</item>
+        <item>@array/error_code_270</item>
+        <item>@array/error_code_271</item>
+        <item>@array/error_code_272</item>
+        <item>@array/error_code_273</item>
+        <item>@array/error_code_274</item>
+        <item>@array/error_code_275</item>
+        <item>@array/error_code_276</item>
+        <item>@array/error_code_277</item>
+        <item>@array/error_code_278</item>
+        <item>@array/error_code_279</item>
+        <item>@array/error_code_280</item>
+        <item>@array/error_code_281</item>
+        <item>@array/error_code_282</item>
+        <item>@array/error_code_283</item>
+        <item>@array/error_code_514</item>
+        <item>@array/error_code_517</item>
+        <item>@array/error_code_520</item>
+        <item>@array/error_code_766</item>
+        <item>@array/error_code_767</item>
+        <item>@array/error_code_1027</item>
+        <item>@array/error_code_1028</item>
+        <item>@array/error_code_1037</item>
+        <item>@array/error_code_1153</item>
+        <item>@array/error_code_1157</item>
+        <item>@array/error_code_2110</item>
+        <item>@array/error_code_2177</item>
+        <item>@array/error_code_2181</item>
+        <item>@array/error_code_2305</item>
+        <item>@array/error_code_2048</item>
+        <item>@array/error_code_2056</item>
+        <item>@array/error_code_2067</item>
+        <item>@array/error_code_2088</item>
+        <item>@array/error_code_4112</item>
+        <item>@array/error_code_4113</item>
+        <item>@array/error_code_4114</item>
+        <item>@array/error_code_4128</item>
+    </array>
+    <string-array name="error_code_1027">
+        <item>1027</item>
+        <item>ERROR_WRITE_NOT_PERMIT</item>
+        <item>1. enable CCCD failed, please try to set getDfuConfig().addErrorAction(DfuConfig.ERROR_ACTION_REFRESH_DEVICE);</item>
+    </string-array>
+    <string-array name="error_code_1028">
+        <item>1028</item>
+        <item>GATT_INVALID_PDU</item>
+        <item>1. write command failed</item>
+    </string-array>
+    <string-array name="error_code_1037">
+        <item>1037</item>
+        <item>GATT_INVALID_ATTR_LEN</item>
+        <item>1. write command failed</item>
+    </string-array>
+    <string-array name="error_code_1153">
+        <item>1153</item>
+        <item>0x0081-GATT_INTERNAL_ERROR</item>
+        <item>0x0081-GATT_INTERNAL_ERROR</item>
+    </string-array>
+    <string-array name="error_code_1157">
+        <item>1157</item>
+        <item>GATT_ERROR</item>
+        <item>"1. write command failed 
+2. [Controller] Connection Timeout"</item>
+    </string-array>
+    <string-array name="error_code_2048">
+        <item>2048</item>
+        <item>Connection disconnected</item>
+        <item>"1. Gatt disconnection due to link disconnection exceptionally 
+2. SPP connection error"</item>
+    </string-array>
+    <string-array name="error_code_2056">
+        <item>2056</item>
+        <item>GATT_CONN_TIMEOUT</item>
+        <item>1. Gatt disconnection due to connect timeout</item>
+    </string-array>
+    <string-array name="error_code_2067">
+        <item>2067</item>
+        <item>0x13-GATT_CONN_TERMINATE_PEER_USER</item>
+        <item>1. 0x13-GATT_CONN_TERMINATE_PEER_USER</item>
+    </string-array>
+    <string-array name="error_code_2088">
+        <item>2088</item>
+        <item>GATT_CONN_TIMEOUT</item>
+        <item>1.connection timeout</item>
+    </string-array>
+    <string-array name="error_code_2110">
+        <item>2110</item>
+        <item>GATT_CONN_FAIL_ESTABLISH</item>
+        <item>1.connection fail to establish</item>
+    </string-array>
+    <string-array name="error_code_2177">
+        <item>2177</item>
+        <item>GATT_INTERNAL_ERROR</item>
+        <item>establish connection failed</item>
+    </string-array>
+    <string-array name="error_code_2181">
+        <item>2181</item>
+        <item>GATT_ERROR</item>
+        <item>establish connection failed</item>
+    </string-array>
+    <string-array name="error_code_2305">
+        <item>2305</item>
+        <item>Can’t register Client_if</item>
+        <item>1. Client if had be registered over</item>
+    </string-array>
+    <string-array name="error_code_256">
+        <item>256</item>
+        <item>Can’t connect the device enter OTA mode</item>
+        <item>"1. Radio environment is extremely bad 
+2. Android connect BLE device with BR/EDR channel 
+3. Bluedroid exception"</item>
+    </string-array>
+    <string-array name="error_code_257">
+        <item>257</item>
+        <item>IO error of read file</item>
+        <item>1. I/O error, the probability is very low</item>
+    </string-array>
+    <string-array name="error_code_258">
+        <item>258</item>
+        <item>Launch the GATT search service failure</item>
+        <item>1. Bluedroid exception, the probability is very low</item>
+    </string-array>
+    <string-array name="error_code_259">
+        <item>259</item>
+        <item>Invokes the Java synchronization lock exceptions</item>
+        <item>1. Java exception, the probability is very low</item>
+    </string-array>
+    <string-array name="error_code_260">
+        <item>260</item>
+        <item>Connect without any callback response</item>
+        <item>"1. Probably other applications connection with the same device 
+2. Bluedroid exception, the probability is very low"</item>
+    </string-array>
+    <string-array name="error_code_261">
+        <item>261</item>
+        <item>Send command but no callback</item>
+        <item>"1. Disconnect when send command 
+2. If is Android4.4 system, get the error when half in upgrade, may be Bluedroid have GKI get buffer exception, please use the patch version up to 9377(The function of update connection parameters is added), or use the mobile phone above Android5.0"</item>
+    </string-array>
+    <string-array name="error_code_262">
+        <item>262</item>
+        <item>Service mismatch</item>
+        <item>1. Connect error device, the probability is very low</item>
+    </string-array>
+    <string-array name="error_code_263">
+        <item>263</item>
+        <item>Characteristic mismatch</item>
+        <item>1. Connect error device, the probability is very low</item>
+    </string-array>
+    <string-array name="error_code_264">
+        <item>264</item>
+        <item>establish le connection failed</item>
+        <item>1. establish le connection failed</item>
+    </string-array>
+    <string-array name="error_code_265">
+        <item>265</item>
+        <item>0x0209--Can’t scan the device</item>
+        <item>"1. Radio environment is extremely bad
+ 2. Sent to the command of “entering OTA mode”, but can’t scan the device, the possible reasons is the device are not yet enter the OTA mode
+ 3. [BLE] Please check if the positioning function is enabled"</item>
+    </string-array>
+    <string-array name="error_code_266">
+        <item>266</item>
+        <item>Can’t enable notification</item>
+        <item>1. Bluedroid exception, the probability is very low</item>
+    </string-array>
+    <string-array name="error_code_267">
+        <item>267</item>
+        <item>write data error</item>
+        <item>1. connection lost when send data</item>
+    </string-array>
+    <string-array name="error_code_268">
+        <item>268</item>
+        <item>Resend time exceed max</item>
+        <item>1. Bluedroid exception, the probability is very low</item>
+    </string-array>
+    <string-array name="error_code_269">
+        <item>269</item>
+        <item>The battery is low</item>
+        <item>1. Remote device battery is low</item>
+    </string-array>
+    <string-array name="error_code_270">
+        <item>270</item>
+        <item>Read bank info error</item>
+        <item>1. Bluedroid exception, the probability is very low</item>
+    </string-array>
+    <string-array name="error_code_271">
+        <item>271</item>
+        <item>Read app info error</item>
+        <item>1. Bluedroid exception, the probability is very low</item>
+    </string-array>
+    <string-array name="error_code_272">
+        <item>272</item>
+        <item>Read patch info error</item>
+        <item>1. Bluedroid exception, the probability is very low</item>
+    </string-array>
+    <string-array name="error_code_273">
+        <item>273</item>
+        <item>Read image version failed</item>
+        <item>1. Read image version failed with no callback</item>
+    </string-array>
+    <string-array name="error_code_274">
+        <item>274</item>
+        <item>User didn’t avtive image update</item>
+        <item>1. Occur when user did’t active the image update in silent OTA update</item>
+    </string-array>
+    <string-array name="error_code_275">
+        <item>275</item>
+        <item>Buffer Check retry times exceed to MAX value</item>
+        <item>1. Occur a lot of error 517</item>
+    </string-array>
+    <string-array name="error_code_276">
+        <item>276</item>
+        <item>Request mtu failed</item>
+        <item>1. Request mtu failed with no callback</item>
+    </string-array>
+    <string-array name="error_code_277">
+        <item>277</item>
+        <item>read remote mac addr failed</item>
+        <item>1. read remote mac addr failed</item>
+    </string-array>
+    <string-array name="error_code_278">
+        <item>278</item>
+        <item>Version Check failed</item>
+        <item>"1. image app version lower than remote 
+2. image patch version lower than remote 
+3. image patch extension version lower than remote"</item>
+    </string-array>
+    <string-array name="error_code_279">
+        <item>279</item>
+        <item>send command failed</item>
+        <item>1. read characteristic failed</item>
+    </string-array>
+    <string-array name="error_code_280">
+        <item>280</item>
+        <item>enter ota mode failed</item>
+        <item>1. send command failed</item>
+    </string-array>
+    <string-array name="error_code_281">
+        <item>281</item>
+        <item>OTA Over SPP not supported</item>
+        <item>OTA Over SPP not supported</item>
+    </string-array>
+    <string-array name="error_code_282">
+        <item>282</item>
+        <item>RWS OTA NOT READY</item>
+        <item>RWS OTA NOT READY</item>
+    </string-array>
+    <string-array name="error_code_283">
+        <item>283</item>
+        <item>role swap failed</item>
+        <item>role swap failed</item>
+    </string-array>
+    <string-array name="error_code_4112">
+        <item>4112</item>
+        <item>Invalid Bluetooth Address</item>
+        <item>1. Address is invalid</item>
+    </string-array>
+    <string-array name="error_code_4113">
+        <item>4113</item>
+        <item>Secret key invalid</item>
+        <item>1. Secret key invalid</item>
+    </string-array>
+    <string-array name="error_code_4114">
+        <item>4114</item>
+        <item>configuration invalid</item>
+        <item>1. configuration invalid</item>
+    </string-array>
+    <string-array name="error_code_4128">
+        <item>4128</item>
+        <item>aborted</item>
+        <item>1. aborted</item>
+    </string-array>
+    <string-array name="error_code_514">
+        <item>514</item>
+        <item>Invalid parameters</item>
+        <item>1. invalid parameters</item>
+    </string-array>
+    <string-array name="error_code_517">
+        <item>517</item>
+        <item>CRC Check failed</item>
+        <item>"1. crc check failed(Packet lost, recommend to slow down) 
+2. update connection params failed"</item>
+    </string-array>
+    <string-array name="error_code_520">
+        <item>520</item>
+        <item>Flash erase error</item>
+        <item>1. Flash erase error</item>
+    </string-array>
+    <string-array name="error_code_766">
+        <item>766</item>
+        <item>opcode response not supported</item>
+        <item>1. opcode response not supported</item>
+    </string-array>
+    <string-array name="error_code_767">
+        <item>767</item>
+        <item>Didn’t receive remote notification</item>
+        <item>"1. AES Mismatch 
+2. May be the remote device have problems in config memory allocation"</item>
+    </string-array>
+    <string-array name="habbit_tab_titles">
+        <item>@string/eat</item>
+        <item>@string/sport</item>
+        <item>@string/drinks</item>
+        <item>@string/sleep</item>
+        <item>@string/others</item>
+    </string-array>
+    <string-array name="heart_circle_color_array">
+        <item>FFFB1F1F</item>
+        <item>FFFDDCDC</item>
+        <item>FFFDE1E0</item>
+        <item>FFFDE0E1</item>
+        <item>FFFDE0E1</item>
+    </string-array>
+    <string-array name="height_unite">
+        <item>@string/cm</item>
+        <item>@string/inch</item>
+    </string-array>
+    <string-array name="history_sport_labels">
+        <item>@string/m_week</item>
+        <item>@string/m_month</item>
+        <item>@string/m_year</item>
+    </string-array>
+    <string-array name="keep_live_permission_app_arrays">
+        <item>@string/auto_start</item>
+        <item>@string/noti_perm</item>
+        <item>@string/save_perm</item>
+    </string-array>
+    <array name="load_file_error_code">
+        <item>@array/load_file_error_code_4097</item>
+        <item>@array/load_file_error_code_4098</item>
+        <item>@array/load_file_error_code_4099</item>
+        <item>@array/load_file_error_code_4100</item>
+        <item>@array/load_file_error_code_4101</item>
+        <item>@array/load_file_error_code_4102</item>
+        <item>@array/load_file_error_code_4103</item>
+        <item>@array/load_file_error_code_4104</item>
+        <item>@array/load_file_error_code_4105</item>
+        <item>@array/load_file_error_code_4106</item>
+        <item>@array/load_file_error_code_4107</item>
+        <item>@array/load_file_error_code_4108</item>
+        <item>@array/load_file_error_code_4109</item>
+        <item>@array/load_file_error_code_4110</item>
+        <item>@array/load_file_error_code_4111</item>
+        <item>@array/load_file_error_code_4112</item>
+        <item>@array/load_file_error_code_4113</item>
+        <item>@array/load_file_error_code_4114</item>
+        <item>@array/load_file_error_code_4115</item>
+    </array>
+    <string-array name="load_file_error_code_4097">
+        <item>4097</item>
+        <item>load image file failed</item>
+        <item>1. load image file failed</item>
+    </string-array>
+    <string-array name="load_file_error_code_4098">
+        <item>4098</item>
+        <item>Image file path invalid</item>
+        <item>1. Image file path invalid</item>
+    </string-array>
+    <string-array name="load_file_error_code_4099">
+        <item>4099</item>
+        <item>file extension invalid</item>
+        <item>1. file extension invalid</item>
+    </string-array>
+    <string-array name="load_file_error_code_4100">
+        <item>4100</item>
+        <item>Image file not exist</item>
+        <item>1.Image file not exist</item>
+    </string-array>
+    <string-array name="load_file_error_code_4101">
+        <item>4101</item>
+        <item>ic type conflict</item>
+        <item>1. image is not match with ic</item>
+    </string-array>
+    <string-array name="load_file_error_code_4102">
+        <item>4102</item>
+        <item>file type conflict</item>
+        <item>1. unsupport file type</item>
+    </string-array>
+    <string-array name="load_file_error_code_4103">
+        <item>4103</item>
+        <item>file type conflict</item>
+        <item>1. not support combine pack file</item>
+    </string-array>
+    <string-array name="load_file_error_code_4104">
+        <item>4104</item>
+        <item>low image version</item>
+        <item>1. low image version</item>
+    </string-array>
+    <string-array name="load_file_error_code_4105">
+        <item>4105</item>
+        <item>no combine bud item exist.</item>
+        <item>1. no combine bud item exist.</item>
+    </string-array>
+    <string-array name="load_file_error_code_4106">
+        <item>4106</item>
+        <item>sub combined file must be a pack file.</item>
+        <item>1. sub combined file must be a pack file.</item>
+    </string-array>
+    <string-array name="load_file_error_code_4107">
+        <item>4107</item>
+        <item>not support pack file</item>
+        <item>1. not support pack file</item>
+    </string-array>
+    <string-array name="load_file_error_code_4108">
+        <item>4108</item>
+        <item>not support single file.</item>
+        <item>1. not support single file.</item>
+    </string-array>
+    <string-array name="load_file_error_code_4109">
+        <item>4109</item>
+        <item>section size check failed.</item>
+        <item>1. ota header section size check failed</item>
+    </string-array>
+    <string-array name="load_file_error_code_4110">
+        <item>4110</item>
+        <item>empty pack</item>
+        <item>1. pack file has no available update file</item>
+    </string-array>
+    <string-array name="load_file_error_code_4111">
+        <item>4111</item>
+        <item>not support dual bank</item>
+        <item>1. pack file not support dual bank</item>
+    </string-array>
+    <string-array name="load_file_error_code_4112">
+        <item>4112</item>
+        <item>not support OTA Header bin</item>
+        <item>1.non dualbank OTA not support OTA Header bin</item>
+    </string-array>
+    <string-array name="load_file_error_code_4113">
+        <item>4113</item>
+        <item>low image version</item>
+        <item>1.there must be at least one data image version > active image version</item>
+    </string-array>
+    <string-array name="load_file_error_code_4114">
+        <item>4114</item>
+        <item>code image version low</item>
+        <item>1.all code image version must >= active image version</item>
+    </string-array>
+    <string-array name="load_file_error_code_4115">
+        <item>4115</item>
+        <item>incomplete file</item>
+        <item>1.incomplete file, miss OTA Header</item>
+    </string-array>
+    <string-array name="rtk_app_file_browser">
+        <item>ES File Manager</item>
+        <item>File Manager</item>
+        <item>RE File Manager</item>
+        <item>Search for others</item>
+    </string-array>
+    <string-array name="rtk_app_file_browser_action">
+        <item>market://details?id=com.estrongs.android.pop</item>
+        <item>market://details?id=com.rhmsoft.fm</item>
+        <item>market://details?id=com.speedsoftware.rootexplorer</item>
+        <item>market://search?q=file manager</item>
+    </string-array>
+    <string-array name="rtk_debug_level_entries">
+        <item>VERBOSE</item>
+        <item>DEBUG</item>
+        <item>INFO</item>
+        <item>WARN</item>
+        <item>ERROR</item>
+    </string-array>
+    <string-array name="rtk_debug_level_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="rtk_dfu_debug_level_entries">
+        <item>VERBOSE</item>
+        <item>DEBUG</item>
+        <item>INFO</item>
+        <item>WARN</item>
+        <item>ERROR</item>
+    </string-array>
+    <string-array name="rtk_dfu_debug_level_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="rtk_log_level_entries">
+        <item>VERBOSE</item>
+        <item>DEBUG</item>
+        <item>INFO</item>
+        <item>WARN</item>
+        <item>ERROR</item>
+    </string-array>
+    <string-array name="rtk_log_level_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="rtk_pref_bt_scan_filter_rssi_entries">
+        <item>Less than 30</item>
+        <item>Less than 40</item>
+        <item>Less than 50</item>
+        <item>Less than 60</item>
+        <item>Less than 70</item>
+        <item>Less than 80</item>
+        <item>Less than 90</item>
+        <item>Unlimited</item>
+    </string-array>
+    <string-array name="rtk_pref_bt_scan_filter_rssi_values">
+        <item>-30</item>
+        <item>-40</item>
+        <item>-50</item>
+        <item>-60</item>
+        <item>-70</item>
+        <item>-80</item>
+        <item>-90</item>
+        <item>-1000</item>
+    </string-array>
+    <string-array name="rtk_pref_bt_scan_mechanism_entries">
+        <item>ALL</item>
+        <item>FILTER_ONE</item>
+    </string-array>
+    <string-array name="rtk_pref_bt_scan_mechanism_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="rtk_pref_bt_scan_mode_entries">
+        <item>DUAL</item>
+        <item>BLE</item>
+        <item>BLE ONLY</item>
+        <item>BR/EDR</item>
+        <item>BR/EDR ONLY</item>
+    </string-array>
+    <string-array name="rtk_pref_bt_scan_mode_values">
+        <item>0</item>
+        <item>16</item>
+        <item>17</item>
+        <item>32</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="rtk_select_file_type_entries">
+        <item>All</item>
+        <item>File</item>
+    </string-array>
+    <string-array name="rtk_select_file_type_values">
+        <item>*/*</item>
+        <item>file/*</item>
+    </string-array>
+    <string-array name="share_quotations">
+        <item>我和脂肪作斗争，差点没牺牲。</item>
+        <item>走过一些弯路，也好过原地踏步。</item>
+        <item>开心告诉别人，难过找我倾诉。</item>
+        <item>报复平庸最好的方式，就是保持一颗跳动的心。</item>
+        <item>岁月如动车，光阴似高铁，再不开心，我们就老了。</item>
+        <item>关于明天的事情，后天我们就知道了。</item>
+        <item>不要怕，我们遇到的多数人，不过是在假装自己很厉害而已。</item>
+        <item>无论今天有多糟糕，醉了，醒了，就是明天。</item>
+        <item>超越自我，超越对手，点燃似火的热情！</item>
+        <item>健康来自运动，生命来自己运动，一切想要的东西都要运动。</item>
+        <item>如果你想强壮，跑步吧! 如果你想健美，跑步吧!</item>
+        <item>放弃可以找到一万个理由，坚持只需一个信念。</item>
+        <item>要么挥汗如雨，要么滚回家。</item>
+        <item>想要放弃了的时候，想想当初为啥开始？</item>
+        <item>你只有非常努力，才能看起来毫不费力。</item>
+        <item>好身材只留给有毅力的人！</item>
+        <item>他们嘲笑打击你，是因为你越来越优秀了!</item>
+        <item>不断奔跑，才能更靠近梦想。</item>
+        <item>倒下，也要倒在自己的地盘上。</item>
+        <item>当你坚持不了的时候，想想你的妻子或女朋友失望的眼神！</item>
+        <item>很多人一生都在追求结果，却忽略了这个精彩的过程。</item>
+    </string-array>
+    <string-array name="speak_list_tab_titles">
+        <item>@string/speak_friends_list</item>
+        <item>@string/speak_friends_group</item>
+    </string-array>
+    <string-array name="spo_circle_color_array">
+        <item>FFFFFFFF</item>
+        <item>FFFDE0E0</item>
+        <item>FFFDDFDF</item>
+        <item>FFFDD9D9</item>
+        <item>FFFF8E8E</item>
+    </string-array>
+    <string-array name="sport_tab_titles">
+        <item>@string/walk</item>
+        <item>@string/run</item>
+        <item>@string/bike</item>
+    </string-array>
+    <string-array name="tab_menu_labels">
+        <item>@string/step_txt</item>
+        <item>@string/more_txt</item>
+        <item>@string/sport_txt</item>
+        <item>@string/mine_txt</item>
+    </string-array>
+    <string-array name="temp_unite">
+        <item>@string/sheshi</item>
+        <item>@string/huashi</item>
+    </string-array>
+    <string-array name="weight_unite">
+        <item>@string/kg</item>
+        <item>@string/pound</item>
+    </string-array>
+</resources>

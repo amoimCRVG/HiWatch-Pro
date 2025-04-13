@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_register" android:text="@string/register" android:layout_alignParentRight="true" style="@style/login_tv_sytle1" />
+    <TextView android:textColor="@color/login_page_tv_color2" android:id="@id/tv_skip" android:text="@string/skip" android:layout_alignParentLeft="true" style="@style/login_tv_sytle1" />
+    <ImageView android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:src="@mipmap/login_fitpro" android:layout_below="@id/tv_register" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/login_page_tv_color1" android:id="@id/tv_email_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_30" android:layout_marginTop="58.0dip" android:maxWidth="120.0dip" android:text="@string/email_addr" android:layout_below="@id/logo" android:layout_alignParentLeft="true" style="@style/textview_marquee_style" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/login_page_tv_color1" android:id="@id/tv_forget_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="@string/is_forget_password" android:layout_alignBottom="@id/tv_email_login" android:layout_alignParentRight="true" style="@style/textview_marquee_style" />
+</RelativeLayout>

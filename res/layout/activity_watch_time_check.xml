@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/black" android:id="@id/btn_h" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试小时" />
+    <Button android:textColor="@color/black" android:id="@id/btn_m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试分钟" />
+    <Button android:textColor="@color/black" android:id="@id/btn_s" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试秒钟" />
+    <Button android:textColor="@color/black" android:id="@id/btn_weather" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试天气" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:enabled="false" android:id="@id/edt_file_path" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="表盘路径" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_choise_file" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择文件" android:onClick="onChoiceFile" />
+    </LinearLayout>
+    <Button android:id="@id/btn_start_upgrade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始升级表盘" android:onClick="startUpgrade" />
+    <Button android:id="@id/btn_start_auto_upgrade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始自动升级" android:onClick="startAutoUpgrade" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="时间间隔(ms):" />
+        <EditText android:id="@id/edt_send_space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="3" android:inputType="number" />
+    </LinearLayout>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="心电开始" android:onClick="startCRC" />
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="心电结束" android:onClick="finishtCRC" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+.class public abstract Lcom/realsil/sdk/dfu/s/b;
+.super Lcom/realsil/sdk/dfu/internal/base/DfuThreadCallback;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/realsil/sdk/dfu/internal/base/DfuThreadCallback;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract a(ZLcom/realsil/sdk/dfu/s/a;)V
+.end method

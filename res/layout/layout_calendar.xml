@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/clendar_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/sleep_calendar_date_txt_color" android:id="@id/tv_current_times" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/dp_10" android:text="2019.01.12" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" layout="@layout/include_sign_week" />
+    <com.ldf.calendar.view.MonthPager android:id="@id/calendar_view" android:layout_width="fill_parent" android:layout_height="270.0dip" android:layout_marginTop="@dimen/dp_10" />
+    <View android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" />
+</LinearLayout>

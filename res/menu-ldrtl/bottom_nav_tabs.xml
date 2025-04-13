@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ui_mine_selector" android:id="@id/mine_btn" android:title="@string/mine_txt" />
+    <item android:icon="@drawable/ui_sport_selector" android:id="@id/sport_btn" android:title="@string/sport_txt" />
+    <item android:icon="@drawable/ui_device_selector" android:id="@id/device_btn" android:title="@string/more_txt" />
+    <item android:icon="@drawable/ui_home_selector" android:id="@id/home_btn" android:title="@string/step_txt" />
+</menu>

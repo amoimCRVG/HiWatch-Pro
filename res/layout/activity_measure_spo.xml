@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout style="@style/measure_ll_bg_style">
+                <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="260.0dip" android:layout_height="260.0dip">
+                        <xfkj.fitpro.view.RunningCircleProgressView android:id="@id/circleProgress" app:runCpvNormalColor="#fffcd3ba" app:runCpvProgressColor="#fffe6a11" app:runCpvShaderColors="@array/spo_circle_color_array" style="@style/measure_circleProgress_style" />
+                        <LinearLayout style="@style/measure_containner1_style">
+                            <ImageView android:id="@id/img_anim" android:layout_height="wrap_content" android:src="@mipmap/ic_launcher" style="@style/measure_img1_style" />
+                            <TextView android:id="@id/tv_content" android:text="@string/spo2_n_data" style="@style/measure_tv1_style" />
+                            <TextView android:id="@id/tv_content_time" android:text="@string/last_recent_n" style="@style/measure_tv1_style" />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:text="@string/highest_spo2" style="@style/measure_tv2_style" />
+                            <TextView android:id="@id/tv_spo_max" android:text="0%" style="@style/measure_tv6_style" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                            <TextView android:text="@string/avg_spo2" style="@style/measure_tv2_style" />
+                            <TextView android:id="@id/tv_spo_avg" android:layout_height="wrap_content" android:text="0%" style="@style/measure_tv6_style" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                            <TextView android:text="@string/lowest_spo2" style="@style/measure_tv2_style" />
+                            <TextView android:id="@id/tv_spo_min" android:text="0%" style="@style/measure_tv6_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+                <Button android:textSize="15.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/test_btn" android:background="@drawable/selector_login_btn" android:layout_width="150.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="@string/start_measure" />
+            </LinearLayout>
+            <LinearLayout android:layout_marginTop="15.0dip" style="@style/measure_ll_bg_style">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="50.0dip">
+                    <include layout="@layout/include_calendar_bar" />
+                </FrameLayout>
+                <com.github.mikephil.charting.charts.CandleStickChart android:id="@id/chart" android:layout_width="fill_parent" android:layout_height="210.0dip" android:layout_marginTop="10.0dip" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                    <LinearLayout style="@style/measure_ll1_style">
+                        <TextView android:id="@id/tv_spo2_highest" android:text="0%" style="@style/measure_tv6_style" />
+                        <TextView android:text="@string/highest_spo2" style="@style/measure_tv4_style" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/measure_ll1_style">
+                        <TextView android:id="@id/tv_spo2_avg" android:text="0%" style="@style/measure_tv6_style" />
+                        <TextView android:text="@string/avg_spo2" style="@style/measure_tv4_style" />
+                    </LinearLayout>
+                    <LinearLayout style="@style/measure_ll1_style">
+                        <TextView android:id="@id/tv_spo2_lowest" android:text="0%" style="@style/measure_tv6_style" />
+                        <TextView android:text="@string/lowest_spo2" style="@style/measure_tv4_style" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

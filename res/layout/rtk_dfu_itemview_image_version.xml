@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/tvFlashLayoutName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rtk_dfu_text_imageversion_flash_layout_name" android:maxLines="2" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="?textAppearanceHeadline6" />
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tvFlashLayoutName">
+        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_detail_file_info_sub_file_version" />
+            <TextView android:textSize="12.0sp" android:id="@id/tv_version" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:freezesText="true" android:layout_weight="1.0" style="@style/DfuSubText" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

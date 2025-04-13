@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab icon="@drawable/ui_home_selector" id="@id/home_btn" title="@string/step_txt" />
+    <tab icon="@drawable/ui_device_selector" id="@id/device_btn" title="@string/more_txt" />
+    <tab icon="@drawable/ui_sport_selector" id="@id/sport_btn" title="@string/sport_txt" />
+    <tab activeColor="#ffff0000" icon="@drawable/ui_mine_selector" id="@id/mine_btn" inActiveColor="#ff00ff00" title="@string/mine_txt" />
+</tabs>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/rtk_pref_title_developer_optoins" android:key="development_preference_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/rtk_pref_title_category_sys_settings">
+        <Preference android:title="@string/rtk_pref_title_device_info" android:key="rtk_sys_settings_device_info" android:summary="@string/rtk_pref_title_device_info_summary">
+            <intent android:action="android.settings.DEVICE_INFO_SETTINGS" />
+        </Preference>
+        <Preference android:title="@string/rtk_pref_title_developer_optoins" android:key="rtk_sys_settings_developer_options" android:summary="@string/rtk_pref_title_developer_options_summary">
+            <intent android:action="android.settings.APPLICATION_DEVELOPMENT_SETTINGS" />
+        </Preference>
+        <Preference android:title="@string/rtk_pref_title_sys_settings_bluetooth" android:key="rtk_sys_settings_bluetooth" android:summary="@string/rtk_pref_title_sys_settings_bluetooth_summary">
+            <intent android:action="android.settings.BLUETOOTH_SETTINGS" />
+        </Preference>
+        <Preference android:title="@string/rtk_pref_title_sys_settings_location" android:key="rtk_sys_settings_location" android:summary="@string/rtk_pref_title_sys_settings_location_summary">
+            <intent android:action="android.settings.LOCATION_SOURCE_SETTINGS" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/rtk_pref_category_title_log">
+        <SwitchPreference android:title="@string/rtk_pref_title_debug" android:key="rtk_switch_debug" android:summaryOn="@string/rtk_pref_title_debug_summary_on" android:summaryOff="@string/rtk_pref_title_debug_summary_off" android:switchTextOn="@string/rtk_switchTextOn" android:switchTextOff="@string/rtk_switchTextOff" />
+        <com.realsil.sdk.support.settings.RtkListPreference android:entries="@array/rtk_debug_level_entries" android:title="@string/rtk_pref_title_log_level" android:key="rtk_debug_log_level" android:summary="{v}" android:entryValues="@array/rtk_debug_level_values" />
+        <SwitchPreference android:title="@string/rtk_pref_title_log" android:key="rtk_switch_log_auto_clear" android:summary="是否打开我呢？" android:summaryOn="@string/rtk_summaryOn_log" android:summaryOff="@string/rtk_summaryOff" android:switchTextOn="@string/rtk_switchTextOn" android:switchTextOff="@string/rtk_switchTextOff" />
+    </PreferenceCategory>
+    <SwitchPreference android:title="@string/rtk_pref_title_dump_hci" android:key="rtk_switch_dump_hci" android:summary="是否打开我呢？" android:summaryOn="@string/rtk_pref_title_dump_hci_summary" android:summaryOff="@string/rtk_pref_title_dump_hci_summary" android:switchTextOn="@string/rtk_switchTextOn" android:switchTextOff="@string/rtk_switchTextOff" />
+    <Preference android:title="@string/rtk_pref_title_dump_hci" android:key="rtk_debug_dump_hci" android:summary="@string/rtk_pref_title_dump_hci_summary">
+        <intent android:action="rtk.action.settings.DUMP_HCI" />
+    </Preference>
+    <SwitchPreference android:title="@string/rtk_pref_title_upgrade" android:key="switch_upgrade" android:summary="是否打开我呢？" android:summaryOn="@string/rtk_summaryOn_upgrade" android:summaryOff="@string/rtk_summaryOff" android:switchTextOn="@string/rtk_switchTextOn" android:switchTextOff="@string/rtk_switchTextOff" />
+    <SwitchPreference android:title="@string/rtk_pref_title_background_run" android:key="switch_background" android:summary="是否打开我呢？" android:summaryOn="@string/rtk_summaryOn" android:summaryOff="@string/rtk_summaryOff" android:switchTextOn="@string/rtk_switchTextOn" android:switchTextOff="@string/rtk_switchTextOff" />
+</PreferenceScreen>

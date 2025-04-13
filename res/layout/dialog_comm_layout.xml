@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_white_radius_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider" android:showDividers="middle">
+        <TextView android:textSize="@dimen/textSize18" android:textColor="@color/textColorDef" android:gravity="center" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="@dimen/btn_height" />
+        <TextView android:textSize="@dimen/textSize16" android:textColor="@color/textColorDef" android:id="@id/tv_content" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/btn_height">
+            <TextView android:textSize="14.0sp" android:textColor="@color/textColorGray" android:gravity="center" android:id="@id/tv_negative" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_weight="1.0" />
+            <View android:background="@color/dividerColor" android:layout_width="@dimen/divider_height" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/textSize14" android:textColor="@color/purple_500" android:gravity="center" android:id="@id/tv_positive" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/sure" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

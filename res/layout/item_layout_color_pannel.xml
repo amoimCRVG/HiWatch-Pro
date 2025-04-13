@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <xfkj.fitpro.view.ColorPannelView android:layout_gravity="center" android:id="@id/colorPannelView" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/img_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/equipment_custom_tc_select" />
+</FrameLayout>

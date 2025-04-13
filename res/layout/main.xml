@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <Button android:gravity="center|left" android:layout_gravity="center_horizontal" android:id="@id/btnSimple" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="BluetoothSPP Simple" />
+        <Button android:gravity="center|left" android:id="@id/btnListener" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="BluetoothSPP Listener" />
+        <Button android:gravity="center|left" android:id="@id/btnAutoConnect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BluetoothSPP AutoConnect" />
+        <Button android:gravity="center|left" android:id="@id/btnDeviceList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="BluetoothSPP DeviceList" />
+        <Button android:gravity="center|left" android:id="@id/btnTerminal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Bluetooth Terminal" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dp_45" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/m_item_box" android:layout_width="fill_parent" android:layout_height="@dimen/dp_45">
+        <ImageView android:layout_gravity="center" android:id="@id/day_img" android:layout_width="@dimen/dp_19" android:layout_height="@dimen/dp_19" android:layout_marginLeft="@dimen/dp_10" />
+        <ImageView android:layout_gravity="center" android:id="@id/time_img" android:layout_width="wrap_content" android:layout_height="@dimen/dp_20" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/measure_date_txt_color" android:layout_gravity="center" android:id="@id/m_day_val" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_6" android:text="2019-03-09" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/measure_date_txt_color" android:layout_gravity="center" android:id="@id/m_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="10:26:09" />
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:paddingLeft="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="@color/measure_txt_color" android:gravity="center" android:layout_gravity="center" android:id="@id/m_heart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="89" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/measure_txt_color" android:gravity="center" android:layout_gravity="center" android:id="@id/m_blood" android:text="120/98" android:layout_weight="1.0" style="@style/measure_item_blood_tv_style" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/measure_txt_color" android:gravity="center" android:layout_gravity="center" android:id="@id/m_spo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="92%" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/line_gray" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" android:layout_marginLeft="@dimen/dp_35" android:layout_marginRight="@dimen/dp_10" android:layout_alignParentBottom="true" />
+</RelativeLayout>

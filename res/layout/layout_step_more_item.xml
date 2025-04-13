@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/llHead" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:layout_gravity="bottom" android:id="@id/iv" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/run_distance" />
+        <xfkj.fitpro.view.RxRunTextView android:textColor="@color/more_steps_txt3_color" android:gravity="left" android:layout_gravity="bottom" android:id="@id/labHead" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="80.0dip" android:text="总步数" style="@style/textview_marquee_style" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_5" android:layout_below="@id/llHead">
+        <xfkj.fitpro.view.RxRunTextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/more_steps_txt3_color" android:id="@id/labBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:maxWidth="@dimen/dp_100" android:text="0" style="@style/textview_marquee_style" />
+        <TextView android:textColor="@color/more_steps_txt3_color" android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/labDanwei" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="步" android:maxLines="1" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/picture_color_53575e" android:gravity="center" android:id="@id/picture_tv_photo" android:background="@drawable/picture_item_select_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/picture_photograph" />
+    <View android:id="@id/top_line" android:background="@color/picture_color_e" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/picture_tv_photo" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/picture_color_53575e" android:gravity="center" android:id="@id/picture_tv_video" android:background="@drawable/picture_item_select_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/picture_record_video" android:layout_below="@id/top_line" />
+    <TextView android:id="@id/video_line" android:background="@color/picture_color_e" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/picture_tv_video" />
+    <TextView android:id="@id/bottom_line" android:background="@color/picture_color_e" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_below="@id/video_line" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/picture_color_53575e" android:gravity="center" android:id="@id/picture_tv_cancel" android:background="@drawable/picture_item_select_bg" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/picture_cancel" android:layout_below="@id/bottom_line" />
+</RelativeLayout>

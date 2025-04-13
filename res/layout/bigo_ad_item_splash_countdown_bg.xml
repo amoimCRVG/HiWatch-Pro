@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/content" android:background="@drawable/bigo_ad_button_countdown_close" android:layout_width="wrap_content" android:layout_height="28.0dip" android:paddingStart="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/text_countdown" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:layout_marginStart="6.0dip" android:layout_marginEnd="8.0dip" />
+    <View android:id="@id/view_stroke" android:background="#33ffffff" android:visibility="gone" android:layout_width="2.0dip" android:layout_height="24.0dip" />
+    <TextView android:textSize="14.0dip" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="end|center" android:id="@id/btn_close" android:visibility="visible" android:layout_width="44.0dip" android:layout_height="24.0dip" android:text="@string/bigo_ad_splash_skip" android:fontFamily="sans-serif-medium" android:layout_marginEnd="4.0dip" />
+</LinearLayout>

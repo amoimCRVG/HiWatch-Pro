@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/cx_protocol" style="@style/cx_login_protocol_style" />
+    <TextView android:textColor="@color/privacy_txt_color" android:id="@id/tv_user_private_procity" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

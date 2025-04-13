@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/picture_color_black" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <VideoView android:id="@id/video_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_play" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/picture_icon_video_play" android:layout_centerInParent="true" />
+    <ImageButton android:id="@id/pictureLeftBack" android:background="@color/picture_color_transparent" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/picture_icon_back" android:scaleType="centerInside" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/picture_color_white" android:id="@id/tv_confirm" android:background="@drawable/picture_send_button_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/picture_confirm" android:layout_marginEnd="16.0dip" android:layout_alignParentEnd="true" />
+</RelativeLayout>

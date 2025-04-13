@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/theme_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_layout" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_sex" android:paddingTop="@dimen/dp_30" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_80">
+        <ImageView android:id="@id/boy" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginBottom="40.0dip" android:src="@drawable/set_user_info_male_1" />
+        <ImageView android:id="@id/girl" android:layout_width="80.0dip" android:layout_height="80.0dip" android:src="@drawable/set_user_info_female_0" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/lldata" android:paddingLeft="@dimen/dp_30" android:paddingRight="@dimen/dp_30" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.weigan.loopview.LoopView android:textSize="@dimen/sp_20" android:layout_gravity="center_vertical" android:id="@id/data_picker" android:layout_width="wrap_content" android:layout_height="@dimen/dp_340" android:layout_marginTop="@dimen/dp_50" app:awv_centerTextColor="@color/white" app:awv_dividerTextColor="@color/gray" app:awv_isLoop="false" app:awv_itemsVisibleCount="5" app:awv_lineSpace="5.0" app:awv_textsize="35" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/btn_box" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_50" android:layout_marginBottom="@dimen/dp_20" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/sp_18" android:textColor="@color/white" android:id="@id/sure_update" android:background="@drawable/setinfo_btn_shape" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:text="@string/sure_update" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

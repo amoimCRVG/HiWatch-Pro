@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/keep_live_fragment_ll1_style">
+        <TextView android:text="@string/goto_open_notifi_perm" style="@style/keep_live_fragment_tv1_style" />
+        <Button android:id="@id/btn_click1" android:text="@string/a_key_start" style="@style/keep_live_fragment_tv2_style" />
+    </LinearLayout>
+</FrameLayout>

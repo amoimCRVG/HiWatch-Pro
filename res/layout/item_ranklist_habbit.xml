@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" style="@style/rank_list_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/rank_txt_color1" android:layout_gravity="center" android:id="@id/tv_rank_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="30.0dip" android:text="1" />
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <de.hdodenhof.circleimageview.CircleImageView android:id="@id/img_avator" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@mipmap/default_avator" />
+        <TextView android:id="@id/tv_nickname" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/img_avator" android:layout_alignTop="@id/img_avator" style="@style/ranklist_nicakname_style" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/rank_txt_color3" android:ellipsize="end" android:id="@id/tv_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:maxLines="1" android:layout_toRightOf="@id/img_avator" android:layout_below="@id/tv_nickname" />
+    </RelativeLayout>
+    <TextView android:id="@id/tv_steps_num" android:text="0" style="@style/ranklist_ranknum_style" />
+    <ImageView android:layout_gravity="center" android:id="@id/img_medal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

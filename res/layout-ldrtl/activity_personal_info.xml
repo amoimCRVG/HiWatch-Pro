@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="rtl"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/ll_header" style="@style/user_info_item_ll_style">
+                <xfkj.fitpro.view.RxRunTextView android:text="@string/head" style="@style/user_info_item_left_rtl_style" />
+                <de.hdodenhof.circleimageview.CircleImageView android:id="@id/circle_header" android:layout_width="43.0dip" android:layout_height="43.0dip" android:layout_marginLeft="15.0dip" android:src="@mipmap/default_avator" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_nickname" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/nickname" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_nickname" android:hint="@string/please_input_nickname" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_a_line_sign" android:visibility="gone" style="@style/user_info_item_ll_style">
+                <xfkj.fitpro.view.RxRunTextView android:text="@string/a_sign" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_a_line_sign" android:hint="@string/please_input" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_phone_num" android:visibility="gone" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/phone_num" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_phone_num" android:hint="@string/no_input" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <View android:id="@id/space" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="9.0dip" />
+            <LinearLayout android:id="@id/ll_sex" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/sex" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_sex" android:hint="@string/man" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_birthday" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/age" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_birthday" android:hint="25" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_height" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/height" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_height" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_weight" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/weight" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_weight" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <Button android:textSize="14.0sp" android:id="@id/btn_recmt" android:visibility="gone" android:layout_marginTop="34.0dip" android:text="@string/enter_measure" style="@style/user_info_sub_button_style" />
+            <LinearLayout android:id="@id/ll_target_steps" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/target_steps" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_target_steps" android:hint="8000" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_target_sport_time" android:visibility="gone" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/target_sport_time" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_target_sport_time" android:hint="30" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_taget_sleep" android:visibility="gone" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/target_sleep" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_target_sleep" android:hint="30h" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_target_stand_time" android:visibility="gone" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/target_stand_time" style="@style/user_info_item_left_style" />
+                <TextView android:id="@id/tv_target_stand_time" android:hint="30" style="@style/user_info_item_right_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_no_move_warn" android:visibility="gone" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/no_move_warn" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_no_move_warn" android:hint="30min" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_dis_unit" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/distance_unit" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_dis_unit" android:hint="@string/km" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_weight_unit" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/weight_unit" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_weight_unit" android:hint="kg" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_height_unit" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/height_unit" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_height_unit" android:hint="cm" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/ll_temp_unit" style="@style/user_info_item_ll_style">
+                <TextView android:text="@string/temp_unit" style="@style/user_info_item_left_rtl_style" />
+                <TextView android:id="@id/tv_temp_unit" android:hint="℃" style="@style/user_info_item_right_rtl_style" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_left_icon" />
+            </LinearLayout>
+            <Button android:layout_gravity="center_horizontal" android:id="@id/btn_unregister" android:text="@string/unregister" style="@style/home_mine_login_btn_bg" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

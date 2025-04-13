@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootView" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.previewlibrary.wight.SmoothImageView android:id="@id/photoView" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/loading" android:visibility="visible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_centerInParent="true" style="@android:style/Widget.DeviceDefault.Light.ProgressBar" />
+    <ImageView android:id="@id/btnVideo" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_video" android:layout_centerInParent="true" android:alpha="0.0" />
+</RelativeLayout>

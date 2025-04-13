@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layoutDirection="rtl" style="@style/frg_device_sub_page_item_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlRoot" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_Left" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/sb1" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.0sp" android:textColor="@color/frg_device_sub_page_item_color" android:gravity="right" android:id="@id/labMenuName" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wechat_remind" android:layout_toLeftOf="@id/iv_Left" android:layout_toRightOf="@id/iv_status" android:layout_centerVertical="true" />
+        <View android:id="@id/hline" style="@style/frg_device_sub_page_item1_style" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/iv_status" android:layout_marginLeft="4.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/common_switch_style" />
+    </RelativeLayout>
+    <TextView android:textSize="15.0sp" android:textColor="@color/frg_device_sub_page_item_color" android:id="@id/tv_tips_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/notifi_app_warn_tips" />
+</LinearLayout>

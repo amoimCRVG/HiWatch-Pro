@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/include_title" />
+        <xfkj.fitpro.view.HalfPieChart android:layout_gravity="center_horizontal" android:id="@id/hf_chart" android:layout_width="wrap_content" android:layout_height="wrap_content" app:hpc_arc_content="0/0" app:hpc_arc_content_color="#ff2e303b" app:hpc_arc_content_size="35.0sp" app:hpc_arc_padding="10" app:hpc_arc_radius="350" app:hpc_arc_stroke_width="40" app:hpc_arc_title="@string/last_recent_time" app:hpc_arc_title_color="#ffacabaf" app:hpc_arc_title_size="15.0sp" app:hpc_arc_unite="mmhg" app:hpc_arc_unite_color="#ff2e303b" app:hpc_arc_unite_size="12.0sp" app:hpc_arc_value1="10" app:hpc_arc_value2="30" app:hpc_arc_value3="15" app:hpc_arc_value4="15" app:hpc_arc_value5="20" app:hpc_arc_value6="10" />
+        <Button android:id="@id/btn_start_measure" style="@style/measure_button_style" />
+        <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" app:contentPaddingBottom="10.0dip" app:contentPaddingLeft="10.0dip" app:contentPaddingRight="10.0dip" app:contentPaddingTop="10.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <xfkj.fitpro.view.HLabelTextView android:id="@id/tv_hl_label1" app:hlt_label_color="#ff6ea9ff" app:hlt_text="@string/blood_type_1" style="@style/blood_details_hlbeltv_style" />
+                    <xfkj.fitpro.view.HLabelTextView android:id="@id/tv_hl_label2" app:hlt_label_color="#ff6d83ff" app:hlt_text="@string/blood_type_2" style="@style/blood_details_hlbeltv_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <xfkj.fitpro.view.HLabelTextView android:id="@id/tv_hl_label3" app:hlt_label_color="#ff5adeff" app:hlt_text="@string/blood_type_3" style="@style/blood_details_hlbeltv_style" />
+                    <xfkj.fitpro.view.HLabelTextView android:id="@id/tv_hl_label4" app:hlt_label_color="#ffffa800" app:hlt_text="@string/blood_type_4" style="@style/blood_details_hlbeltv_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <xfkj.fitpro.view.HLabelTextView android:id="@id/tv_hl_label5" app:hlt_label_color="#fffe6f46" app:hlt_text="@string/blood_type_5" style="@style/blood_details_hlbeltv_style" />
+                    <xfkj.fitpro.view.HLabelTextView android:id="@id/tv_hl_label6" app:hlt_label_color="#ffde2c00" app:hlt_text="@string/blood_type_6" style="@style/blood_details_hlbeltv_style" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <View android:background="#fff0f1f6" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginTop="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/include_calendar_bar" />
+            <com.github.mikephil.charting.charts.LineChart android:id="@id/lineChart" android:layout_width="fill_parent" android:layout_height="150.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <xfkj.fitpro.view.BigSmallTextView android:id="@id/bs_avg_low" android:layout_marginLeft="2.0dip" app:bsBigFontText="0" app:bsSmallFontText="mmHg" style="@style/blood_details_bsm_style" />
+                    <xfkj.fitpro.view.HLabelTextView app:hlt_label_color="#ffffa401" app:hlt_text="@string/avg_low_bld" style="@style/blood_details_hlbeltv2_style" />
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <xfkj.fitpro.view.BigSmallTextView android:id="@id/bs_avg_high" android:layout_marginLeft="2.0dip" app:bsBigFontText="0" app:bsSmallFontText="mmHg" style="@style/blood_details_bsm_style" />
+                    <xfkj.fitpro.view.HLabelTextView app:hlt_label_color="#fff84417" app:hlt_text="@string/avg_high_bld" style="@style/blood_details_hlbeltv2_style" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

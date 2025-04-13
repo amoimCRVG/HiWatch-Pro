@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/material_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff202020" android:gravity="center" android:id="@id/tv_title" android:paddingTop="@dimen/margin_medium" android:paddingBottom="@dimen/margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:background="@color/primaryGreyColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/margin_medium" android:paddingEnd="@dimen/margin_medium" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/dialog_loading_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/loading_bg" android:paddingLeft="21.0dip" android:paddingTop="10.0dip" android:paddingRight="21.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="150.0dip" android:minHeight="110.0dip">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/progressBar1" android:layout_width="35.0dip" android:layout_height="35.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/dialog_loading" android:indeterminateBehavior="repeat" />
+        <TextView android:textSize="15.0sp" android:textColor="#fff0f0f0" android:ellipsize="end" android:id="@id/tipTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:maxWidth="@dimen/dp_140" android:text="加载中..." android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

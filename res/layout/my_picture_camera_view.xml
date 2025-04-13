@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.camera.view.PreviewView android:id="@id/cameraPreviewView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.luck.picture.lib.photoview.PhotoView android:id="@id/image_preview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+    <TextureView android:id="@id/video_play_preview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/image_switch" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:scaleType="centerInside" android:layout_alignParentEnd="true" app:srcCompat="@drawable/picture_ic_camera" />
+    <ImageView android:id="@id/image_flash" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:scaleType="centerInside" android:layout_toStartOf="@id/image_switch" app:srcCompat="@drawable/picture_ic_flash_on" />
+    <com.luck.picture.lib.camera.view.CaptureLayout android:id="@id/capture_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/showpic" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="60.0dip" android:src="@drawable/camera_photo" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="80.0sp" android:textColor="@color/theme_color" android:gravity="center" android:id="@id/count_down" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+</merge>

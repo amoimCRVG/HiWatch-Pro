@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_height" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_height_tapeview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:visibility="gone" android:text="@string/height" style="@style/userinfo_sub_ruler_tv1_style" />
+        <TextView android:id="@id/tvHeight" style="@style/userinfo_sub_ruler_tv2_style" />
+        <com.jdqm.tapelibrary.TapeView android:id="@id/tapeHeight" app:tpmaxValue="230.0" app:tpminValue="100.0" app:value="164.0" style="@style/personinfo_tapeview_style" />
+    </LinearLayout>
+    <Button android:id="@id/btn_height_ok" android:text="@string/ok" style="@style/user_info_sub_button_style" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fab="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/RtkAppTheme.AppBarOverlay" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/ActionBarThemeOverlay" android:id="@id/toolbar_actionbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" fab:popupTheme="@style/ActionBarPopupThemeOverlay" fab:titleTextAppearance="@style/ActionBar.TitleText" style="@style/AwesomeToolBar" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/content_main" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:contentDescription="@null" fab:srcCompat="@mipmap/ic_toolbar_user_fae" />
+    <RelativeLayout android:gravity="end" android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.github.clans.fab.FloatingActionMenu android:id="@id/fabChannel" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" fab:menu_backgroundColor="#ccffffff" fab:menu_icon="@mipmap/ic_fab_switch" fab:menu_labels_ellipsize="end" fab:menu_labels_singleLine="true">
+            <com.github.clans.fab.FloatingActionButton android:id="@id/fabGatt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_toolbar_channel_bluetooth" android:tint="@color/material_white" fab:fab_label="@string/toolbar_text_channel_gatt" fab:fab_size="mini" />
+            <com.github.clans.fab.FloatingActionButton android:id="@id/fabSpp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_toolbar_channel_bluetooth" android:tint="@color/material_white" fab:fab_label="@string/toolbar_text_chennel_spp" fab:fab_size="mini" />
+            <com.github.clans.fab.FloatingActionButton android:id="@id/fabUsb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_toolbar_channel_usb" android:tint="@color/material_white" fab:fab_label="@string/toolbar_text_channel_usb" fab:fab_size="mini" />
+        </com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

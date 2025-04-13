@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/request_location_lay" android:background="@color/gray_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_snippet_folder" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="需要管理外部存储" />
+    <TextView android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="从 Android 11.0 开始，应用程序需要管理外部存储才能扫描本地文件。" />
+    <com.google.android.material.button.MaterialButton android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/btn_open_manage_storage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="打开" app:backgroundTint="@color/black" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/click_guide_container" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="16.0dip" android:layout_marginEnd="-16.0dip" android:layout_alignEnd="@id/splash_btn_cta" android:elevation="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/click_gesture" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bigo_ad_click_guide" />
+    <View android:layout_gravity="center" android:id="@id/click_ripple" android:background="@drawable/bigo_ad_click_ripple" android:visibility="invisible" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginBottom="15.0dip" android:layout_marginEnd="14.0dip" />
+</FrameLayout>

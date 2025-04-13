@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ListItemView"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivDeviceType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/device_type_unknown" android:scaleType="center" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/margin_small" android:layout_alignParentStart="true" app:tint="@color/colorPrimary" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/material_black" android:id="@id/textview_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toStartOf="@id/rssi" android:layout_toEndOf="@id/ivDeviceType" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/material_grey_500" android:id="@id/textview_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/textview_name" android:layout_toEndOf="@id/ivDeviceType" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/material_grey_500" android:id="@id/textview_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/textview_name" android:paddingStart="@dimen/margin_tiny" android:paddingEnd="@dimen/margin_tiny" android:layout_toStartOf="@id/rssi" android:layout_toEndOf="@id/textview_address" />
+    <ImageView android:id="@id/rssi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rtk_support_ic_rssi_bar" android:scaleType="center" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

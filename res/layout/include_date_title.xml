@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background_shape" android:layout_width="fill_parent" android:layout_height="@dimen/dp_50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/msleep_back_btn" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:src="@mipmap/title_return_icon" android:scaleType="center" android:layout_alignParentLeft="true" />
+    <xfkj.fitpro.view.RxRunTextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/msleep_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_20" android:maxWidth="@dimen/dp_60" android:text="@string/sleep" android:layout_toRightOf="@id/msleep_back_btn" style="@style/textview_marquee_style" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageButton android:id="@id/btn_left" android:background="@null" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_40" android:src="@mipmap/home_title_left_icon" />
+        <TextView android:id="@id/tv_date" android:text="今天" style="@style/inculde_date_title_style" />
+        <ImageButton android:id="@id/btn_right" android:background="@null" android:layout_width="@dimen/dp_20" android:layout_height="@dimen/dp_40" android:src="@mipmap/home_title_right_icon" />
+    </LinearLayout>
+</RelativeLayout>

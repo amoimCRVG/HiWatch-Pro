@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/sport_color_bg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabBackground="@color/home_sport_tab_bg_color" app:tabIndicatorColor="@color/home_sport_tab_indi_color" app:tabIndicatorHeight="2.0dip" app:tabRippleColor="@android:color/transparent" app:tabSelectedTextColor="@color/home_sport_tab_txt_select_color" app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" app:tabTextColor="@color/home_sport_tab_txt_color" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="175.0dip" />
+    <FrameLayout style="@style/tab_frg_sport_container2_style">
+        <Button android:textSize="21.0sp" android:textStyle="bold" android:textColor="@color/sport_start_text_color" android:layout_gravity="center" android:id="@id/btn_start_sport" android:background="@drawable/selector_sport_bg" android:layout_width="@dimen/dp_100" android:layout_height="@dimen/dp_100" android:text="@string/start" />
+        <ImageButton android:layout_gravity="center|left" android:id="@id/btn_settings" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:src="@mipmap/movement_su_icon" />
+    </FrameLayout>
+    <FrameLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/tv_total_sport_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+        <xfkj.fitpro.view.SportTypeGradientColorTextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/start_sport" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/walk" />
+        <TextView android:id="@id/tv_run_km" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/tv_walk_km" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/tv_bike_km" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageButton android:id="@id/img_run_start" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageButton android:id="@id/img_walk_start" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageButton android:id="@id/img_bike_start" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

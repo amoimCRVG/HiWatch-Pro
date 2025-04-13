@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="注册" android:onClick="register" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登陆" android:onClick="login" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="qq登陆" android:onClick="login_qq" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信登陆" android:onClick="login_wx" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="facebook登陆" android:onClick="login_fb" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微博登陆" android:onClick="login_wb" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载血压心率" android:onClick="load_blood_heart" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传心率血压" android:onClick="upload_blood_heart" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传步数" android:onClick="upload_steps" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载步数" android:onClick="load_blood_steps" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传睡眠" android:onClick="upload_sleep" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载睡眠" android:onClick="load_sleep" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上传实时步数" android:onClick="upload_real_steps" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下载实时步数" android:onClick="load_real_steps" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载预定义习惯" android:onClick="habbit_1" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保存用户自定义习惯" android:onClick="habbit_2" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加习惯" android:onClick="habbit_3" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除习惯" android:onClick="habbit_4" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查询用户的习惯列表" android:onClick="habbit_5" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查询习惯明细" android:onClick="habbit_6" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="习惯打卡" android:onClick="habbit_7" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="16位图转8位图" android:onClick="onClickBmp16to8" />
+    </LinearLayout>
+</ScrollView>

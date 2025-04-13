@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_title" />
+    <RelativeLayout android:visibility="gone" style="@style/sport_settings_rl_style">
+        <TextView android:text="@string/voice_player" style="@style/sport_his_details_tv3_style" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout style="@style/sport_settings_rl_style">
+        <TextView android:text="@string/keep_sreen" style="@style/sport_his_details_tv3_style" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@id/switch_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:visibility="gone" style="@style/sport_settings_rl_style">
+        <TextView android:text="@string/map" android:layout_centerVertical="true" style="@style/sport_his_details_tv3_style" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_amap" android:layout_marginRight="@dimen/dp_10" android:text="@string/general_amap" style="@style/sport_his_details_tv4_style" />
+            <androidx.appcompat.widget.AppCompatRadioButton android:id="@id/radio_gmap" android:text="@string/general_gmap" style="@style/sport_his_details_tv4_style" />
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

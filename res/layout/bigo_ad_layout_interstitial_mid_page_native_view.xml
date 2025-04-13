@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="right" android:id="@id/btn_close" android:background="@drawable/bigo_ad_ic_close_gray_light" android:padding="4.0dip" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="4.0dip" />
+    <ScrollView android:id="@id/native_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.5dip">
+                <sg.bigo.ads.common.view.RoundedFrameLayout android:id="@id/fl_icon" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" app:radius="16.0dip">
+                    <sg.bigo.ads.common.view.AdImageView android:id="@id/iv_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </sg.bigo.ads.common.view.RoundedFrameLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="21.5sp" android:textColor="#ff202124" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:maxLines="2" android:fontFamily="sans-serif-medium" android:layout_marginEnd="20.0dip" />
+                    <TextView android:textSize="13.0sp" android:textColor="#ff1b8863" android:ellipsize="end" android:id="@id/tv_company_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dip" android:maxLines="1" android:layout_marginEnd="20.0dip" />
+                    <TextView android:textSize="12.0sp" android:textColor="#ff5f6367" android:ellipsize="end" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="2" android:layout_marginEnd="20.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="16.0dip">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_start_rate" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff202124" android:id="@id/tv_start_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <ImageView android:layout_gravity="center_vertical" android:background="@drawable/bigo_ad_ic_star" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="4.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="12.0sp" android:textColor="#ff65696d" android:ellipsize="marquee" android:id="@id/tv_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+                </LinearLayout>
+                <View android:background="#ffe7eaed" android:layout_width="1.0dip" android:layout_height="24.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="#ff202124" android:id="@id/tv_download_num" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView android:textSize="12.0sp" android:textColor="#ff65696d" android:ellipsize="marquee" android:id="@id/tv_download_num_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/bigo_ad_download_num_text" />
+                </LinearLayout>
+                <View android:background="#ffe7eaed" android:layout_width="1.0dip" android:layout_height="24.0dip" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <ImageView android:id="@id/iv_age" android:background="@drawable/bigo_ad_ic_everyone" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginLeft="5.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                        <TextView android:textSize="12.0sp" android:textColor="#ff65696d" android:ellipsize="marquee" android:id="@id/tv_age" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <ImageView android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginLeft="3.0dip" android:src="@drawable/bigo_ad_ic_everyone_ic_info" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <sg.bigo.ads.common.view.RoundedFrameLayout android:id="@id/btn_cta" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="36.0dip" android:layout_marginRight="20.0dip" app:radius="8.0dip">
+                <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_cta_inner" android:background="#ff1b8863" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/bigo_ad_cta_download_default" />
+            </sg.bigo.ads.common.view.RoundedFrameLayout>
+            <HorizontalScrollView android:orientation="horizontal" android:id="@id/ll_media" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" />
+            <sg.bigo.ads.common.view.RoundedFrameLayout android:id="@id/ll_fallback_media" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" app:radius="4.0dip">
+                <sg.bigo.ads.common.view.AdImageView android:id="@id/iv_fallback_media" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </sg.bigo.ads.common.view.RoundedFrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_native_extra" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="20.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ff202124" android:layout_gravity="center|left" android:id="@id/tv_gp_info_extra_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bigo_ad_about_app_default" />
+                    <ImageView android:layout_gravity="center|right" android:id="@id/iv_gp_info_extra_arrow" android:background="@drawable/bigo_ad_mid_page_ic_gp_right" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+                </FrameLayout>
+                <TextView android:textSize="13.0sp" android:textColor="#ff63666b" android:ellipsize="end" android:id="@id/tv_desc_below" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" />
+                <sg.bigo.ads.common.view.AutoNextLineLinearLayout android:id="@id/fbl_genre" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="28.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

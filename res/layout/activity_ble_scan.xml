@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/ble_title_paired_devices" android:background="#ff555555" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ble_paired_device" app:layout_constraintTop_toTopOf="parent" />
+    <ListView android:id="@id/ble_paired_listview" android:layout_width="fill_parent" android:layout_height="160.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ble_title_paired_devices" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/ble_new_devices_textview" android:background="#ff555555" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/other_ble_available_device" android:layout_alignParentStart="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ble_paired_listview" />
+    <ListView android:id="@id/ble_new_device_listview" android:layout_width="fill_parent" android:layout_height="300.0dip" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" app:layout_constraintBottom_toTopOf="@id/linearLayout2" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/ble_new_devices_textview" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout2" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent">
+        <Button android:id="@id/ble_scan_start_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_scan" android:layout_weight="0.5" style="@style/Widget.AppCompat.Button.Small" />
+        <Button android:id="@id/ble_scan_stop_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stop_scan" android:layout_weight="0.5" style="@style/Widget.AppCompat.Button.Small" />
+        <Button android:id="@id/button2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/br_mode" android:layout_weight="0.5" style="@style/Widget.AppCompat.Button.Small" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

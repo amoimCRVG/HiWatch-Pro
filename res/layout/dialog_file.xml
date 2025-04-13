@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_bottom_dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/textView" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="升级文件" />
+    <com.phy.ota_demo.utils.SlideRecyclerView android:id="@id/rv_file" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@mipmap/login_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_title" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="36.0dip" android:paddingRight="36.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip">
+        <TextView android:text="@string/check_your_email" style="@style/login_bold_tv_style" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/textColorBlack" android:gravity="left" android:id="@id/tv_email_register_finish" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="@string/send_email_success" android:lineSpacingExtra="16.0dip" android:textDirection="locale" />
+        <Button android:id="@id/btn_start" android:layout_marginTop="50.0dip" android:text="@string/start" style="@style/login_btn_style_2" />
+        <Button android:id="@id/btn_modify_email" android:background="@drawable/selector_skip_btn" android:visibility="gone" android:layout_marginTop="8.0dip" android:text="@string/modify_email" style="@style/login_btn_style_2" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip">
+            <TextView android:textSize="12.0sp" android:textColor="@color/textColorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_recv_email_tips" android:textDirection="locale" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/theme_color" android:id="@id/tv_resend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resend" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="@integer/bottom_anim_duration" android:drawable="@mipmap/equipment_icon" />
+    <item android:duration="@integer/bottom_anim_duration" android:drawable="@mipmap/equipment_icon_click" />
+</animation-list>

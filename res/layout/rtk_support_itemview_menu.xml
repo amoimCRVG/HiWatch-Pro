@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/rootView" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="120.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="24.0sp" android:gravity="start|center" android:id="@id/tvName" android:padding="@dimen/margin_small" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="TextView" android:layout_weight="1.0" />
+            <ImageView android:id="@id/ivHeader" android:padding="@dimen/margin_small" android:layout_width="48.0dip" android:layout_height="48.0dip" android:scaleType="center" app:tint="@color/colorPrimary" />
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvDesc" android:background="#0f202020" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:maxLines="1" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

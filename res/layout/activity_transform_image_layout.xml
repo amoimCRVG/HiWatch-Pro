@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_title" />
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/measure_xindian_mage_ll1_style">
+        <xfkj.fitpro.view.VerticalTextView android:id="@id/tv_date" app:vfBottomText="2021/08/20" app:vfTopText="@string/time" style="@style/measure_xindian_mage_tv1_style" />
+        <xfkj.fitpro.view.VerticalTextView android:id="@id/tv_height" app:vfBottomText="100" app:vfTopText="@string/height" style="@style/measure_xindian_mage_tv1_style" />
+        <xfkj.fitpro.view.VerticalTextView android:id="@id/tv_weight" app:vfBottomText="100" app:vfTopText="@string/weight" style="@style/measure_xindian_mage_tv1_style" />
+        <xfkj.fitpro.view.VerticalTextView android:id="@id/tv_heart_rate" style="@style/measure_xindian_mage_tv2_style" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

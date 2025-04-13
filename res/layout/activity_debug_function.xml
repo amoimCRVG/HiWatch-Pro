@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="睡眠日志" android:onClick="onClickSleepLog" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="消息通知调试" android:onClick="onClickMessageNotifications" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="通用文件传输" android:onClick="onClickCommonFile" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="LY平台OTA调试" android:onClick="onClickOTAForLY" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="导出崩溃日志" android:onClick="onClickExportCrashLog" />
+        <Button android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="模拟协议" android:onClick="onClickMoni" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="收费表盘调试" android:onClick="onClickOpenChargeWatchTheme" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="测试表盘H5(不带参数)" android:onClick="onClickTestWatchThemeH5" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="测试表盘H5(带参数)" android:onClick="onClickTestWatchThemeH5WithParams" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="蓝牙SPP" android:onClick="onClickSPP" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="语音聊天" android:onClick="onClickVoiceChat" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="表盘信息" android:onClick="watchInfo" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="产品图信息" android:onClick="onClickProductInf" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="天气信息打印" android:onClick="onClickWeather" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="表盘测试" android:onClick="startWatchTheme" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="表盘调试模式" android:onClick="onClickWatchThemeDebug" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="导出表盘源文件" android:onClick="onClickExportWatchTheme" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="aliPay" android:onClick="aliPay" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Debug log" android:onClick="onClickDebugLog" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Api调试" android:onClick="onClickDebugApi" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="指令调试" android:onClick="onClickDebugCommand" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="本地功能调试" android:onClick="onJumpLocalFunction" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="图片裁剪" android:onClick="onImageCrop" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="跳转到消息通知" android:onClick="onGoMessageNotifications" />
+        <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="睡眠开始时间设置" android:onClick="onClickOfSleepBegin" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="切换语言" android:layout_weight="1.0" android:onClick="onClickChangeLang" />
+            <EditText android:gravity="center" android:id="@id/edt_lang" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="zh" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

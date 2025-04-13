@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xfkj.fitpro.view.XRadioGroup android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RadioButton android:id="@id/rad_s" android:background="@drawable/selector_health_report_radio_s" style="@style/health_report_radio_style" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RadioButton android:id="@id/rad_a" android:background="@drawable/selector_health_report_radio_a" style="@style/health_report_radio_style" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RadioButton android:id="@id/rad_b" android:background="@drawable/selector_health_report_radio_b" style="@style/health_report_radio_style" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RadioButton android:id="@id/rad_c" android:background="@drawable/selector_health_report_radio_c" style="@style/health_report_radio_style" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RadioButton android:id="@id/rad_f" android:background="@drawable/selector_health_report_radio_f" style="@style/health_report_radio_style" />
+    </FrameLayout>
+</xfkj.fitpro.view.XRadioGroup>

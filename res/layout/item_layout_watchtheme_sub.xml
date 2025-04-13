@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/frm_preview" android:layout_width="81.0dip" android:layout_height="96.0dip">
+        <ImageView android:id="@id/img_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <Button android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/btn_install" android:background="@drawable/selector_watch_theme2_install_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minWidth="63.0dip" android:minHeight="24.0dip" android:text="@string/install" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rlRoot" android:background="@color/white" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_Left" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/sb1" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ff333333" android:gravity="left" android:id="@id/labMenuName" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="菜单名称" android:layout_toRightOf="@id/iv_Left" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/gray" android:gravity="center_vertical" android:id="@id/labVersion" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv" android:layout_alignParentTop="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:src="@drawable/icon_set_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/hline" android:background="@color/search_line_gray2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="42.0dip" android:layout_marginTop="8.0dip" android:layout_below="@id/labMenuName" />
+</RelativeLayout>

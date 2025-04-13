@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/picture_color_black" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/titleBar" android:background="@color/picture_color_grey_3e" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageButton android:id="@id/left_back" android:background="@color/picture_color_transparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/picture_icon_back" android:scaleType="centerInside" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/picture_color_white" android:ellipsize="end" android:gravity="center" android:id="@id/picture_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/picture_camera_roll" android:maxEms="11" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/ib_delete" android:background="@color/picture_color_transparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/picture_icon_delete" android:scaleType="centerInside" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.luck.picture.lib.widget.PreviewViewPager android:id="@id/preview_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleBar" />
+</RelativeLayout>

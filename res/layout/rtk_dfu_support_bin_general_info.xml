@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/dfu_divider_horizontal_line" android:showDividers="middle" android:dividerPadding="@dimen/dfu_margin_small">
+        <com.realsil.sdk.support.view.SettingsItem android:gravity="center_vertical" android:id="@id/itemFileName" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target" app:isArrowVisible="false" app:subTextColor="@color/material_grey_500" app:subTextSize="12.0sp" app:subTextVisible="true" app:text="@string/rtk_dfu_text_file_name" app:textSize="12.0sp" />
+        <com.realsil.sdk.support.view.SettingsItem android:gravity="center_vertical" android:id="@id/itemFileType" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target" app:isArrowVisible="false" app:subTextColor="@color/material_grey_500" app:subTextSize="12.0sp" app:subTextVisible="true" app:text="@string/rtk_dfu_text_file_type" app:textSize="12.0sp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

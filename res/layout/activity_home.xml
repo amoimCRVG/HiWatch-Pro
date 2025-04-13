@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_single" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="单个升级" />
+    <Button android:id="@id/btn_updates" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="批量升级" />
+</androidx.appcompat.widget.LinearLayoutCompat>

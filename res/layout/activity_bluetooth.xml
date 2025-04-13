@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/scan_page_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_chunk" layout="@layout/title_layout" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="vertical" android:id="@id/blist_box" android:background="@color/scan_page_content_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ListView android:id="@id/drives_lists" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/lottieanimation" style="@style/scan_device_lottieani_style" />
+                <xfkj.fitpro.view.TipView android:id="@id/tipView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" app:tipBackgroundColor="@color/scan_failed_tip_color" app:tipText="@string/scan_nothing_tips" app:tipTextColor="@color/scan_tips_color" app:tipTextSize="14.0sp" />
+            </RelativeLayout>
+            <LinearLayout android:scrollbarStyle="outsideInset" android:gravity="center" android:orientation="vertical" android:id="@id/bbtns_box" android:visibility="visible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/sp_20" android:textColor="@color/scan_page_tv_color1" android:gravity="center" android:paddingTop="@dimen/dp_20" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/do_connecting_txt" />
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/lottieanimation1" android:layout_width="135.0dip" android:layout_height="135.0dip" android:layout_marginBottom="15.0dip" app:lottie_autoPlay="true" app:lottie_fileName="device_connecting.json" app:lottie_loop="true" />
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingBottom="@dimen/dp_10" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:text="@string/bluetooth_connection" style="@style/scan_page_tv1_style" />
+                    <TextView android:id="@id/connection_stocks" android:text="@string/reinfecta_txt" style="@style/scan_page_tv2_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingBottom="@dimen/dp_10" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:text="@string/set_time_txt" style="@style/scan_page_tv1_style" />
+                    <TextView android:id="@id/time_stocks" android:text="@string/reinfecta_txt" style="@style/scan_page_tv2_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingBottom="@dimen/dp_10" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:text="@string/set_uinfo_txt" style="@style/scan_page_tv1_style" />
+                    <TextView android:id="@id/uinfo_stocks" android:text="@string/reinfecta_txt" style="@style/scan_page_tv2_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingBottom="@dimen/dp_10" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:text="@string/set_step_txt" style="@style/scan_page_tv1_style" />
+                    <TextView android:id="@id/step_stocks" android:text="@string/reinfecta_txt" style="@style/scan_page_tv2_style" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

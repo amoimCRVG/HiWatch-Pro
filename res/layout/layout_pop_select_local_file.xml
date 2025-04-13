@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#80cacaca" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_select_2" android:layout_width="250.0dip" android:layout_height="350.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/rl_title" android:background="@drawable/bg_select_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/tv_title" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/本地文件列表" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/tv_local_file_folder" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/所在目录" />
+        </LinearLayout>
+        <ListView android:id="@id/lv_file_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_title" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_local_file_list_null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textColor="@color/colorAccent" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/文件夹不存在本地文件" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

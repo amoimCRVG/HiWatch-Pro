@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/textColorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_contract" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/textColorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/name" android:maxLength="20" />
+        <EditText android:textColor="@color/textColorBlack" android:id="@id/edt_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:hint="@string/please_input_nickname" android:inputType="text" style="@style/login_register_edt_style" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/textColorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/num" android:maxLength="20" />
+        <EditText android:textColor="@color/textColorBlack" android:id="@id/edt_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:hint="@string/please_input_coreect_num" android:layout_weight="1.0" android:inputType="phone" style="@style/login_register_edt_style" />
+        <ImageButton android:id="@id/import_contract" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:src="@mipmap/equipment_fc_ab_icon" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_45">
+        <Button android:id="@id/btn_cancel" android:background="@drawable/shape_health_report_remt" android:layout_width="145.0dip" android:layout_height="40.0dip" android:layout_marginRight="15.0dip" android:text="@string/cancel" />
+        <Button android:textColor="@color/white" android:id="@id/btn_ok" android:background="@drawable/selector_login_btn" android:layout_width="145.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:text="@string/ok" />
+    </LinearLayout>
+</LinearLayout>

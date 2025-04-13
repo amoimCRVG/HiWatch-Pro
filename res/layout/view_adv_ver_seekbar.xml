@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tv_top" android:paddingTop="@dimen/margin_small" android:paddingBottom="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.realsil.sdk.support.view.VerticalSeekBarWrapper android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.realsil.sdk.support.view.VerticalSeekBar android:id="@id/seekbar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitTrack="false" app:seekBarRotation="CW270" />
+    </com.realsil.sdk.support.view.VerticalSeekBarWrapper>
+    <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tv_bottom" android:paddingTop="@dimen/margin_small" android:paddingBottom="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

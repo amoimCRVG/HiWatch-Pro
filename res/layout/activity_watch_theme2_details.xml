@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/shape_watch_theme2_details_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="148.0dip">
+                <FrameLayout android:id="@id/frm_preview" android:layout_width="91.0dip" android:layout_height="96.0dip">
+                    <ImageView android:id="@id/preview1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageView android:id="@id/preview2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+                <Button android:textColor="@color/white" android:id="@id/btn_choise_img" android:background="@drawable/selector_watch_theme2_install_bg2" android:padding="5.0dip" android:layout_width="107.0dip" android:layout_height="34.0dip" android:layout_marginLeft="20.0dip" android:text="@string/choise_pic" />
+            </LinearLayout>
+            <LinearLayout style="@style/watch_theme2_detials_ll_style">
+                <TextView android:text="@string/time_postion" style="@style/watch_theme2_detials_title_style" />
+                <RadioGroup android:orientation="vertical" android:id="@id/radGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <RadioButton android:id="@id/rad_pos_left_top" android:layout_marginTop="0.0dip" android:checked="true" android:text="@string/pos_left_top" style="@style/watch_theme2_detials_radbtn_style" />
+                    <RadioButton android:id="@id/rad_pos_right_top" android:text="@string/pos_right_top" style="@style/watch_theme2_detials_radbtn_style" />
+                    <RadioButton android:id="@id/rad_pos_left_bottom" android:text="@string/pos_left_bottom" style="@style/watch_theme2_detials_radbtn_style" />
+                    <RadioButton android:id="@id/rad_pos_right_bottom" android:text="@string/pos_right_bottom" style="@style/watch_theme2_detials_radbtn_style" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout android:visibility="gone" style="@style/watch_theme2_detials_ll_style">
+                <TextView android:text="@string/watch_theme2_font_color" style="@style/watch_theme2_detials_title_style" />
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/color_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button android:textSize="19.0sp" android:textColor="@color/white" android:id="@id/btn_install" android:background="@drawable/selector_watch_theme2_install_bg2" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="50.0dip" android:layout_marginTop="37.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="20.0dip" android:text="@string/install" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

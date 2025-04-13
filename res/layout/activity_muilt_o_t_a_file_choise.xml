@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:enabled="false" android:id="@id/edt_file_path" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="路径" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_choise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择程序固件" android:onClick="onChoiseFile" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:enabled="false" android:id="@id/edt_file_picture_path" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="路径" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_pic_choise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择图片固件" android:onClick="onChoiseFile" />
+    </LinearLayout>
+    <Button android:id="@id/btn_start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="开始升级" android:onClick="onClickStartFile" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="重置" android:onClick="onClickReset" />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_his_sport_details" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="rtl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/frm_mapview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/shortcut" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/btn_back" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@mipmap/movement_complete_return_icon" />
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView android:id="@id/cardview_details" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/sport_history_details_bg_color1">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0sp" android:textColor="@color/sport_history_details_tv_color1" android:id="@id/tv_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/walk" android:drawableLeft="@mipmap/movement_complete_fitpro_icon" android:drawablePadding="5.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <xfkj.fitpro.view.NewsLabFontsTextView android:textSize="48.0sp" android:textColor="@color/sport_history_details_tv_color1" android:id="@id/total_km" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                <TextView android:textColor="@color/textColorGray" android:id="@id/km" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/km" android:layout_toLeftOf="@id/total_km" android:layout_alignBaseline="@id/total_km" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/textColorGray" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2019-01-01 08:22" android:layout_alignBaseline="@id/total_km" android:layout_alignParentLeft="true" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/sport_history_details_tv_color1" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="风易俗" android:layout_above="@id/tv_date" android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+            <View android:background="@color/line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="96.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:gravity="right" android:text="@string/av_speed" style="@style/sport_his_details_tv1_style" />
+                    <xfkj.fitpro.view.NewsLabFontsTextView android:id="@id/tv_av_speed" android:text="00:00" style="@style/sport_his_details_tv2_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:gravity="center_horizontal" android:text="@string/duration" style="@style/sport_his_details_tv1_style" />
+                    <xfkj.fitpro.view.NewsLabFontsTextView android:gravity="center_horizontal" android:id="@id/tv_duration" android:text="00:00" style="@style/sport_his_details_tv2_style" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:gravity="left" android:text="@string/fee_kcal" style="@style/sport_his_details_tv1_style" />
+                    <xfkj.fitpro.view.NewsLabFontsTextView android:gravity="left" android:id="@id/tv_km_cal" android:text="124" style="@style/sport_his_details_tv2_style" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_30" app:cardBackgroundColor="@color/sport_history_details_bg_color1">
+        <Button android:layout_gravity="center_vertical" android:id="@id/btn_share" android:layout_marginBottom="0.0dip" android:text="@string/share" style="@style/user_info_sub_button_style" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

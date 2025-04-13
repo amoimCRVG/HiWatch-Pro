@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="温度1:" />
+        <EditText android:gravity="center" android:id="@id/edt_tmp1" android:layout_width="60.0dip" android:layout_height="wrap_content" android:inputType="number" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="温度2:" />
+        <EditText android:gravity="center" android:id="@id/edt_tmp2" android:layout_width="60.0dip" android:layout_height="wrap_content" android:inputType="number" />
+    </LinearLayout>
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="指定模拟天气1" android:onClick="onMBtnWeatherClicked2" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="随机模拟天气1" android:onClick="onMBtnWeatherClicked" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="指定模拟天气2" android:onClick="onMBtnWeatherClicked22" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="随机模拟天气2" android:onClick="onMBtnWeatherClicked221" />
+</LinearLayout>

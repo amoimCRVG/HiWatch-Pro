@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="20.0sp" android:textColor="@color/textColorBlack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_protocol" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/textColorBlack" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxHeight="300.0dip" android:text="@string/permission_tips_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="35.0dip">
+        <Button android:id="@id/cancel_button" android:background="@drawable/sweet_default_button_left_background" android:text="@string/pause_use" style="@style/dialog_blue_button" />
+        <View android:background="@color/line_color" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <Button android:id="@id/confirm_button" android:background="@drawable/sweet_default_button_right_background" android:text="@string/agree" style="@style/dialog_blue_button" />
+    </LinearLayout>
+</LinearLayout>

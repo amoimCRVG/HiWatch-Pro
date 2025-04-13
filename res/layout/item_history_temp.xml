@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/dp_10" android:paddingRight="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/item_history_date_txt_color" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2020.01.20" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/item_history_date_txt_color" android:id="@id/tv_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="28℃" />
+    </LinearLayout>
+    <View android:background="@color/item_history_line_color" android:layout_width="fill_parent" android:layout_height="@dimen/dp_1" />
+</LinearLayout>

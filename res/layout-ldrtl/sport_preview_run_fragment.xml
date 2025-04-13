@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_container" android:layoutDirection="ltr" style="@style/sport_preview_container_style"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <xfkj.fitpro.view.NewsLabFontsTextView android:id="@id/tv_total_km" android:text="0.00" style="@style/home_sport_preview_tv1_style" />
+    <TextView android:id="@id/tv_sport_title" android:text="@string/run_total_km" android:layout_below="@id/tv_total_km" style="@style/home_sport_preview_tv2_style" />
+    <include android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:layout_alignParentRight="true" layout="@layout/include_weather" />
+</RelativeLayout>

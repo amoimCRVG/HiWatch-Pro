@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/theme_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:background="@color/theme_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr">
+            <include layout="@layout/include_layout_feed_adv" />
+            <RelativeLayout android:background="@color/home_fg_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@color/theme_color" android:layout_width="fill_parent" android:layout_height="296.0dip" android:layout_alignParentTop="true" />
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/rl_top" android:padding="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/img_cup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_list_icon" />
+                    <ImageButton android:id="@id/imgbtn_refresh" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_refresh" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <xfkj.fitpro.view.MySportView android:id="@id/sprotView" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="28.0dip" android:layout_below="@id/rl_top" app:inCircleWidth="30.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/tv_target" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="目标: 8000" android:layout_below="@id/sprotView" android:layout_centerHorizontal="true" />
+                <xfkj.fitpro.view.skin.SkinImageView android:id="@id/skin_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@mipmap/equipment_bg_logo" android:layout_below="@id/tv_target" android:layout_alignParentRight="true" style="@style/skin_img_1_style" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/skin_logo">
+                    <androidx.cardview.widget.CardView android:id="@id/cardview_sport" android:layout_height="124.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:minHeight="124.0dip" style="@style/home_cardview_style">
+                        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <RelativeLayout style="@style/home_cardview1_layout1_style">
+                                <TextView android:id="@id/tv_distance_title" android:text="@string/distance" android:drawableBottom="@mipmap/home_distance_icon" style="@style/home_cardview1_tv1_style" />
+                                <xfkj.fitpro.view.NewsLabFontsTextView android:id="@id/tv_distance" android:text="0" android:layout_below="@id/tv_distance_title" style="@style/home_cardview1_tv2_style" />
+                                <TextView android:id="@id/tv_km" android:text="@string/km" android:layout_toRightOf="@id/tv_distance" android:layout_alignBottom="@id/tv_distance" style="@style/home_cardview1_tv3_style" />
+                            </RelativeLayout>
+                            <RelativeLayout style="@style/home_cardview1_layout1_style">
+                                <TextView android:id="@id/tv_consume_title" android:text="@string/consume" android:drawableBottom="@mipmap/home_consumption_icon" style="@style/home_cardview1_tv1_style" />
+                                <xfkj.fitpro.view.NewsLabFontsTextView android:id="@id/tv_consume" android:text="0" android:layout_below="@id/tv_consume_title" style="@style/home_cardview1_tv2_style" />
+                                <TextView android:text="@string/kcary_txt" android:layout_toRightOf="@id/tv_consume" android:layout_alignBottom="@id/tv_consume" style="@style/home_cardview1_tv3_style" />
+                            </RelativeLayout>
+                            <RelativeLayout style="@style/home_cardview1_layout1_style">
+                                <TextView android:id="@id/tv_target_title" android:text="@string/target_txt" android:drawableBottom="@mipmap/home_target_icon" style="@style/home_cardview1_tv1_style" />
+                                <xfkj.fitpro.view.FangDaFontsTextView android:textSize="17.0sp" android:id="@id/tv_target2" android:layout_marginTop="10.0dip" android:maxWidth="100.0dip" android:text="@string/incomplete" android:layout_below="@id/tv_target_title" style="@style/home_cardview1_tv2_style" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:id="@id/cardview_health" android:layout_height="78.0dip" style="@style/home_cardview_style">
+                        <RelativeLayout style="@style/home_cardview_rl_style">
+                            <TextView android:layout_marginBottom="6.0dip" android:text="@string/mt_health_grade" android:layout_above="@id/space" style="@style/home_cardview_rl_title_style" />
+                            <View android:id="@id/space" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_centerVertical="true" />
+                            <xfkj.fitpro.view.HealthScoreRadios android:id="@id/health_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/space" app:radSize="25" />
+                            <TextView android:textSize="19.0sp" android:textColor="@color/fg_home_tv1_color" android:id="@id/tv_health_grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="0" android:includeFontPadding="false" android:layout_toLeftOf="@id/grade" android:layout_centerVertical="true" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/fg_home_tv2_color" android:id="@id/grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:text="@string/points" android:drawableRight="@mipmap/home_right_icon" android:drawablePadding="@dimen/dp_10" android:layout_alignBottom="@id/tv_health_grade" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:id="@id/cardview_temp" android:visibility="gone" android:layout_marginTop="12.0dip" style="@style/home_cardview_style">
+                        <RelativeLayout style="@style/home_cardview_rl_style">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <xfkj.fitpro.view.RxRunTextView android:id="@id/tv_temp_title" android:maxWidth="80.0dip" android:text="@string/temp" android:drawableLeft="@mipmap/home_hot_icon" android:drawablePadding="12.0dip" style="@style/home_cardview_rl_title_style" />
+                                <TextView android:id="@id/tv_temp_max" android:layout_marginLeft="10.0dip" android:maxWidth="110.0dip" android:layout_toRightOf="@id/tv_heart_title" style="@style/home_cardview_normal_tv_style" />
+                                <TextView android:id="@id/tv_temp_min" android:layout_marginLeft="14.0dip" android:maxWidth="110.0dip" android:layout_toRightOf="@id/tv_heart_title" style="@style/home_cardview_normal_tv_style" />
+                            </LinearLayout>
+                            <TextView android:id="@id/tv_temp" android:layout_marginLeft="40.0dip" android:layout_marginBottom="22.0dip" android:includeFontPadding="false" android:layout_alignParentBottom="true" style="@style/home_cardview_bold_tv_style" />
+                            <TextView android:id="@id/tv_temp_label" android:layout_marginLeft="4.0dip" android:layout_marginBottom="24.0dip" android:text="℃" android:layout_toRightOf="@id/tv_temp" android:layout_alignParentBottom="true" style="@style/home_cardview_normal_tv_style" />
+                            <com.github.mikephil.charting.charts.LineChart android:id="@id/templineChart" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/dp_10" android:layout_toRightOf="@id/tv_temp_label" android:layout_alignBottom="@id/tv_temp" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:id="@id/cardview_heart" android:layout_marginTop="12.0dip" style="@style/home_cardview_style">
+                        <RelativeLayout style="@style/home_cardview_rl_style">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <xfkj.fitpro.view.RxRunTextView android:id="@id/tv_heart_title" android:maxWidth="80.0dip" android:text="@string/heart_card_title" android:drawableLeft="@mipmap/home_hr_icon" android:drawablePadding="12.0dip" style="@style/home_cardview_rl_title_style" />
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="110.0dip" android:layout_toRightOf="@id/tv_heart_title">
+                                    <TextView android:id="@id/tv_heart_max" android:text="0" style="@style/home_cardview_normal_tv_style" />
+                                    <TextView android:layout_marginLeft="5.0dip" android:text="@string/bpm" style="@style/home_cardview_normal_tv_style" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:maxWidth="110.0dip" android:layout_toRightOf="@id/tv_heart_title">
+                                    <TextView android:id="@id/tv_heart_min" android:text="0" style="@style/home_cardview_normal_tv_style" />
+                                    <TextView android:layout_marginLeft="5.0dip" android:text="@string/bpm" style="@style/home_cardview_normal_tv_style" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <TextView android:id="@id/tv_heart" android:layout_marginLeft="40.0dip" android:layout_marginBottom="22.0dip" android:includeFontPadding="false" android:layout_alignParentBottom="true" style="@style/home_cardview_bold_tv_style" />
+                            <TextView android:layout_marginLeft="4.0dip" android:layout_marginBottom="24.0dip" android:text="@string/bpm" android:layout_toRightOf="@id/tv_heart" android:layout_alignParentBottom="true" style="@style/home_cardview_normal_tv_style" />
+                            <com.github.mikephil.charting.charts.LineChart android:id="@id/lineChart" android:layout_width="115.0dip" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" android:layout_alignBottom="@id/tv_heart" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:id="@id/cardview_sleep" android:layout_marginTop="12.0dip" style="@style/home_cardview_style">
+                        <RelativeLayout style="@style/home_cardview_rl_style">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip">
+                                <TextView android:gravity="center_vertical" android:id="@id/home_card_sleep_title" android:maxWidth="@dimen/dp_80" android:text="@string/sleep" android:drawableLeft="@mipmap/home_sleep_icon" android:drawablePadding="12.0dip" style="@style/home_cardview_rl_title_style" />
+                                <xfkj.fitpro.view.RxRunTextView android:id="@id/tv_sleep_deep" android:layout_marginLeft="@dimen/dp_10" android:text="@string/deep_sleep_txt" android:drawableLeft="@drawable/shape_oval_sleep_deep" style="@style/home_cardview_sleep_tv_style" />
+                                <xfkj.fitpro.view.RxRunTextView android:id="@id/tv_sleep_someone" android:text="@string/somnolence_sleep_txt" android:drawableLeft="@drawable/shape_oval_sleep_normal" style="@style/home_cardview_sleep_tv_style" />
+                                <xfkj.fitpro.view.RxRunTextView android:id="@id/tv_sleep_awake" android:text="@string/sober_txt" android:drawableLeft="@drawable/shape_oval_sleep_shadown" style="@style/home_cardview_sleep_tv_style" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:id="@id/ll_sleep_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginBottom="24.0dip" android:layout_alignParentBottom="true">
+                                <TextView android:id="@id/tv_sleep_hour" android:text="00" style="@style/home_cardview_bold_tv_style" />
+                                <TextView android:layout_marginLeft="@dimen/spacing_3dp" android:text="@string/hour" style="@style/home_cardview_normal_tv_style" />
+                                <TextView android:id="@id/tv_sleep_min" android:layout_marginLeft="4.0dip" android:text="00" style="@style/home_cardview_bold_tv_style" />
+                                <TextView android:layout_marginLeft="@dimen/spacing_3dp" android:text="@string/min" style="@style/home_cardview_normal_tv_style" />
+                            </LinearLayout>
+                            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="120.0dip" android:layout_height="20.0dip" android:layout_alignBottom="@id/ll_sleep_time" android:layout_alignParentRight="true">
+                                <TextView android:id="@id/m_deep_sleep_bgview" android:background="@color/deep_sleep_background" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                                <TextView android:id="@id/m_somnolence_sleep_bgview" android:background="@color/somnolence_sleep_background" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                                <TextView android:id="@id/m_sober_sleep_bgview" android:background="@color/sober_sleep_background" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:id="@id/cardview_xindian" android:layout_marginTop="12.0dip" style="@style/home_cardview_style">
+                        <LinearLayout android:orientation="vertical" android:padding="10.0dip" style="@style/home_cardview_rl_style">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:text="@string/xin_dian" android:drawableLeft="@mipmap/home_ecg_icon" android:drawablePadding="10.0dip" android:layout_weight="1.0" style="@style/home_cardview_rl_title_style" />
+                                <TextView android:textSize="15.0sp" android:textColor="#ff7a7a7a" android:layout_gravity="right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/look_more" />
+                            </LinearLayout>
+                            <RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minHeight="100.0dip">
+                                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                                    <TextView android:layout_marginLeft="@dimen/spacing_3dp" android:text="@string/avg_hr_el" style="@style/home_cardview_normal_tv_style" />
+                                    <TextView android:id="@id/tv_last_hr_el" android:text=" 0 " style="@style/home_cardview_bold_tv_style" />
+                                    <TextView android:layout_marginLeft="@dimen/spacing_3dp" android:text="bpm" style="@style/home_cardview_normal_tv_style" />
+                                    <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="1.0" />
+                                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/home_ecg_bg" />
+                                </LinearLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView android:id="@id/cardview_health_habit" android:layout_height="58.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" style="@style/home_cardview_style">
+                        <TextView android:gravity="left" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_13" android:text="@string/health_habits" android:drawableLeft="@mipmap/home_health_icon" android:drawableRight="@mipmap/home_right_icon" android:drawablePadding="@dimen/dp_10" style="@style/home_cardview_rl_title_style" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </RelativeLayout>
+            <FrameLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="3.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/tv_sleep_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                <xfkj.fitpro.view.FangDaFontsTextView android:textSize="40.0sp" android:textColor="@color/white" android:id="@id/tv_steps" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:text="25632" android:layout_below="@id/img_cup" android:layout_alignParentRight="true" />
+                <TextView android:textSize="21.0sp" android:textColor="@color/white" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="09.28 周五" />
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/ll_steps" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="48.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_steps_today" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/step" />
+                    <xfkj.fitpro.view.CircleProgress android:id="@id/circle_pb_steps" android:layout_width="86.0dip" android:layout_height="86.0dip" app:isRound="false" app:isShowPercentText="false" app:progress="30" app:ringColor="#fff97958" app:ringProgressColor="@color/white" app:ringWidth="8.0dip" />
+                    <TextView android:textSize="21.0sp" android:textColor="#ffbde9ee" android:id="@id/tv_grade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="S" android:includeFontPadding="false" />
+                </LinearLayout>
+                <RelativeLayout android:id="@id/rl_top_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <RelativeLayout android:id="@id/rl_target_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <androidx.cardview.widget.CardView android:id="@id/cardview_heart2" android:layout_marginTop="12.0dip" style="@style/home_cardview_style">
+                    <RelativeLayout style="@style/home_cardview_rl_style">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_heart2" android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <xfkj.fitpro.view.RxRunTextView android:id="@id/tv_heart_title2" android:maxWidth="80.0dip" android:text="@string/heart_card_title" android:drawableLeft="@mipmap/home_hr_icon" android:drawablePadding="12.0dip" android:layout_weight="1.0" style="@style/home_cardview_rl_title_style" />
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="110.0dip" android:layout_toRightOf="@id/tv_heart_title2">
+                                <TextView android:id="@id/tv_heart_max2" android:text="0" style="@style/home_cardview_normal_tv_style" />
+                                <TextView android:layout_marginLeft="5.0dip" android:text="@string/bpm" style="@style/home_cardview_normal_tv_style" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:maxWidth="110.0dip" android:layout_toRightOf="@id/tv_heart_title2">
+                                <TextView android:id="@id/tv_heart_min2" android:text="0" style="@style/home_cardview_normal_tv_style" />
+                                <TextView android:layout_marginLeft="5.0dip" android:text="@string/bpm" style="@style/home_cardview_normal_tv_style" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:id="@id/tv_heart2" android:includeFontPadding="false" android:layout_alignParentBottom="true" style="@style/home_cardview_bold_tv_style" />
+                        <TextView android:layout_marginLeft="4.0dip" android:text="@string/bpm" android:layout_toRightOf="@id/tv_heart2" android:layout_alignParentBottom="true" style="@style/home_cardview_normal_tv_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:src="@mipmap/bg_heart_rate" android:layout_below="@id/ll_heart2" android:layout_alignBottom="@id/tv_heart2" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@id/cardview_blood" android:layout_marginTop="12.0dip" style="@style/home_cardview_style">
+                    <RelativeLayout style="@style/home_cardview_rl_style">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_blood_top" android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <xfkj.fitpro.view.RxRunTextView android:id="@id/tv_blood_title" android:maxWidth="80.0dip" android:text="@string/measure_blood" android:drawableLeft="@mipmap/home_bloodpressure_icon" android:drawablePadding="12.0dip" android:layout_weight="1.0" style="@style/home_cardview_rl_title_style" />
+                            <TextView android:id="@id/tv_blood_status" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <TextView android:id="@id/tv_blood" android:includeFontPadding="false" android:layout_alignParentBottom="true" style="@style/home_cardview_bold_tv_style" />
+                        <TextView android:layout_marginLeft="4.0dip" android:text="@string/mmhg2" android:layout_toRightOf="@id/tv_blood" android:layout_alignParentBottom="true" style="@style/home_cardview_normal_tv_style" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@mipmap/home_bloodpressure_chart" android:layout_below="@id/ll_blood_top" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView android:id="@id/cardview_spo" android:layout_marginTop="12.0dip" style="@style/home_cardview_style">
+                    <RelativeLayout style="@style/home_cardview_rl_style">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_spo_top" android:paddingTop="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <xfkj.fitpro.view.RxRunTextView android:id="@id/tv_spo_title" android:maxWidth="80.0dip" android:text="@string/measure_spo" android:drawableLeft="@mipmap/home_bloodoxygen_icon" android:drawablePadding="12.0dip" android:layout_weight="1.0" style="@style/home_cardview_rl_title_style" />
+                            <TextView android:id="@id/tv_spo_status" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <TextView android:id="@id/tv_spo" android:text="0%" android:includeFontPadding="false" android:layout_alignParentBottom="true" style="@style/home_cardview_bold_tv_style" />
+                        <TextView android:layout_marginLeft="4.0dip" android:text="@string/spo22" android:layout_toRightOf="@id/tv_spo" android:layout_alignParentBottom="true" style="@style/home_cardview_normal_tv_style" />
+                        <ProgressBar android:id="@id/pb_spo2" android:layout_width="150.0dip" android:layout_height="6.0dip" android:layout_marginBottom="5.0dip" android:max="100" android:progress="0" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="?android:progressBarStyleHorizontal" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <ImageView android:id="@id/img_spo_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@mipmap/home_bloodoxygen_spot" />
+                <ImageView android:id="@id/img_spo_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.github.mikephil.charting.charts.LineChart android:layout_gravity="bottom" android:id="@id/lineChart2" android:layout_width="115.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" />
+                <ImageView android:id="@id/img_def_hr" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <com.github.mikephil.charting.charts.LineChart android:id="@id/lineChart3" android:layout_width="115.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginRight="@dimen/dp_10" />
+                <ImageView android:id="@id/img_def_bld" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/img_def_spo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/global_rank_ll_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_marginTop="10.0dip" style="@style/ranklist_ll_style">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <xfkj.fitpro.view.polygon.view.PolygonImageView android:id="@id/img_two_times" android:layout_below="@id/img_two" app:poly_border_color="@color/circle_view_border_color" style="@style/ranklist_img_style" />
+            <ImageView android:id="@id/img_two" android:src="@mipmap/home_ranking_two" style="@style/ranklist_img_ranknum_style" />
+            <ImageView android:src="@mipmap/home_hh_si_ranking_two" android:layout_below="@id/img_two_times" style="@style/ranklist_img_global_style" />
+        </RelativeLayout>
+        <TextView android:id="@id/tv_nickname_two" style="@style/ranklist_tv_nicakname_style" />
+        <TextView android:id="@id/tv_rank_num_two" style="@style/ranklist_tv_ranknum_style" />
+    </LinearLayout>
+    <LinearLayout style="@style/ranklist_ll_style">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <xfkj.fitpro.view.polygon.view.PolygonImageView android:id="@id/img_one_times" android:layout_below="@id/img_one" app:poly_border_color="@color/circle_view_border_color" style="@style/ranklist_img_style" />
+            <ImageView android:id="@id/img_one" android:src="@mipmap/home_ranking_one" style="@style/ranklist_img_ranknum_style" />
+            <ImageView android:src="@mipmap/home_hh_si_ranking_one" android:layout_below="@id/img_one_times" style="@style/ranklist_img_global_style" />
+        </RelativeLayout>
+        <TextView android:id="@id/tv_nickname_one" style="@style/ranklist_tv_nicakname_style" />
+        <TextView android:id="@id/tv_rank_num_one" style="@style/ranklist_tv_ranknum_style" />
+    </LinearLayout>
+    <LinearLayout android:layout_marginTop="10.0dip" style="@style/ranklist_ll_style">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <xfkj.fitpro.view.polygon.view.PolygonImageView android:id="@id/img_three_times" android:layout_below="@id/img_three" app:poly_border_color="@color/circle_view_border_color" style="@style/ranklist_img_style" />
+            <ImageView android:id="@id/img_three" android:src="@mipmap/home_ranking_three" style="@style/ranklist_img_ranknum_style" />
+            <ImageView android:src="@mipmap/home_hh_si_ranking_three" android:layout_below="@id/img_three_times" style="@style/ranklist_img_global_style" />
+        </RelativeLayout>
+        <TextView android:id="@id/tv_nickname_three" style="@style/ranklist_tv_nicakname_style" />
+        <TextView android:id="@id/tv_rank_num_three" style="@style/ranklist_tv_ranknum_style" />
+    </LinearLayout>
+</LinearLayout>

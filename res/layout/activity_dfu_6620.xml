@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" layout="@layout/include_toolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize18" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/tv_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="蓝牙设备名" />
+            <TextView android:textSize="@dimen/textSize14" android:textColor="@color/textColorGray" android:layout_gravity="center_horizontal" android:id="@id/tv_device_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(mac地址)" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginStart="19.0dip">
+                <CheckBox android:id="@id/cb_encrypt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加密" />
+                <CheckBox android:id="@id/cb_flash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Flash外部存储" android:layout_marginStart="21.0dip" />
+            </LinearLayout>
+            <RadioButton android:textStyle="bold" android:id="@id/rb_net" android:paddingLeft="6.0dip" android:text="网络下载升级文件" android:layout_marginStart="16.0dip" style="@style/Text.Common" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_project_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="21.0dip" android:layout_marginEnd="19.0dip">
+                <TextView android:text="项目名称：" style="@style/Text.Common" />
+                <EditText android:textSize="@dimen/textSize16" android:textColor="@color/textColorDef" android:id="@id/et_project_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/ll_project_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="21.0dip" android:layout_marginEnd="19.0dip">
+                <TextView android:text="项目编号：" style="@style/Text.Common" />
+                <EditText android:textSize="@dimen/textSize16" android:textColor="@color/textColorDef" android:id="@id/et_project_number" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/textSize14" android:textColor="@color/textColorDef" android:id="@id/tv_update_desc" android:layout_marginTop="8.0dip" android:layout_marginStart="21.0dip" android:layout_marginEnd="21.0dip" style="@style/Text.Common" />
+            <RadioButton android:textStyle="bold" android:id="@id/rb_local" android:paddingLeft="6.0dip" android:layout_marginTop="19.0dip" android:text="本地加载升级文件" android:layout_marginStart="16.0dip" style="@style/Text.Common" />
+            <TableLayout android:orientation="vertical" android:id="@id/tl_file" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="21.0dip">
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:text="文件名：" style="@style/Text.Common" />
+                    <TextView android:id="@id/tv_file_name" style="@style/Text.Common" />
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:text="文件大小：" style="@style/Text.Common" />
+                    <TextView android:id="@id/tv_file_size" style="@style/Text.Common" />
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:text="文件状态：" style="@style/Text.Common" />
+                    <TextView android:id="@id/tv_file_status" style="@style/Text.Common" />
+                </TableRow>
+            </TableLayout>
+            <Button android:layout_gravity="center_horizontal" android:id="@id/btn_select_file" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_margin="19.0dip" android:text="选择文件" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/btn_update" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_margin="19.0dip" android:text="开始升级" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

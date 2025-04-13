@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_title" />
+    <xfkj.fitpro.view.XEditText android:id="@id/edt_input_hname" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/dp_20" android:layout_marginTop="@dimen/dp_30" android:layout_marginRight="@dimen/dp_20" android:hint="@string/input_habbit_name" android:maxLength="10" style="@style/login_register_edt_style" />
+</LinearLayout>

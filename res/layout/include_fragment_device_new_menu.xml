@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_clock_dial_settings" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_clock_dial_settings" android:text="@string/clock_dial_settings" android:drawableLeft="@mipmap/equipment_td_icon" style="@style/device_frag_func3_style" />
+    <View style="@style/device_line_style" />
+</LinearLayout>

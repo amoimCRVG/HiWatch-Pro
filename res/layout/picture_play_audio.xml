@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/picture_color_transparent_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/picture_dialog_shadow" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/picture_color_9b" android:id="@id/tv_musicStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/picture_play_audio" />
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <TextView android:textSize="13.0sp" android:textColor="@color/picture_color_9b" android:id="@id/tv_musicTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_centerVertical="true" />
+            <SeekBar android:id="@id/musicSeekBar" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:maxHeight="4.0dip" android:max="100" android:progressDrawable="@drawable/picture_layer_progress" android:minHeight="4.0dip" android:thumb="@drawable/picture_sb_thumb" android:thumbOffset="0.0dip" android:layout_toRightOf="@id/tv_musicTime" android:layout_centerVertical="true" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/picture_color_9b" android:id="@id/tv_musicTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_toRightOf="@id/musicSeekBar" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/picture_color_white" android:gravity="center" android:id="@id/tv_PlayPause" android:background="@drawable/picture_btn_music_shape" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="@string/picture_play_audio" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/picture_color_white" android:gravity="center" android:id="@id/tv_Stop" android:background="@drawable/picture_btn_music_shape" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/picture_stop_audio" android:layout_weight="1.0" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/picture_color_white" android:gravity="center" android:id="@id/tv_Quit" android:background="@drawable/picture_btn_music_shape" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="25.0dip" android:text="@string/picture_quit_audio" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

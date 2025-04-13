@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_habbit_list" android:background="@drawable/selector_habbit_list_item" android:layout_width="fill_parent" android:layout_height="78.0dip" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/img_status" android:background="@null" android:layout_width="@dimen/dp_40" android:layout_height="@dimen/dp_40" android:src="@drawable/selector_habbit_item_status" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/habbit_item_name_color" android:id="@id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:text="@string/sport" android:layout_toLeftOf="@id/img_arrow" android:layout_toRightOf="@id/img_status" android:layout_above="@id/space" />
+    <View android:id="@id/space" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/habbit_item_continue_color" android:id="@id/tv_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_10" android:text="@string/habbit_keep_n_days" android:layout_toLeftOf="@id/img_arrow" android:layout_toRightOf="@id/img_status" android:layout_below="@id/space" style="@style/textview_marquee_style" />
+    <ImageView android:id="@id/img_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dp_15" android:src="@mipmap/home_hh_right_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/textview_marquee_style" />
+</RelativeLayout>

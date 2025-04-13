@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/picture_color_black" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/picture_title_bar" />
+    <include layout="@layout/picture_bottom_bar" />
+    <com.luck.picture.lib.widget.PreviewViewPager android:id="@id/preview_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/select_bar_layout" android:layout_below="@id/titleBar" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_title" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_privaticy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:text="@string/agree_confirm_privcty1" style="@style/data_access_tv1_style" />
+        <TextView android:id="@id/tv_agree" android:text="@string/agree_confirm_privcty2" style="@style/data_access_tv2_style" />
+    </LinearLayout>
+    <Button android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/btn_confirm" android:background="@drawable/selector_login_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/agree" />
+</LinearLayout>

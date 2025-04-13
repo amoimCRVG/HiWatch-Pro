@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="解绑蓝牙1" android:onClick="onClickUnbondDevice1" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="解绑蓝牙2" android:onClick="onClickUnbondDevice2" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="解绑蓝牙3" android:onClick="onClickUnbondDevice3" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="解绑蓝牙4" android:onClick="onClickUnbondDevice4" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="解绑蓝牙5" android:onClick="onClickUnbondDevice5" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="解绑蓝牙6" android:onClick="onClickUnbondDevice6" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="音乐播放/暂停" android:onClick="onClickMusicPlayOrPause" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="下一首" android:onClick="onClickMusicNex" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="上一首" android:onClick="onClickMusicLast" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="找手机" android:onClick="onClickFindPhone" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="暂停找手机" android:onClick="onClickPausePhone" />
+</LinearLayout>

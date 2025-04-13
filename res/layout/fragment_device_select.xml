@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?android:buttonBarStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/textSize18" android:textStyle="bold" android:textColor="@color/textColorDef" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_device" android:layout_marginStart="19.0dip" />
+        <ImageView android:layout_gravity="end" android:id="@id/iv_sort" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sort_24" />
+    </FrameLayout>
+    <TextView android:id="@id/permission_rationale" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/scanner_permission_rationale" android:paddingStart="26.0dip" android:paddingEnd="26.0dip" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:layout_gravity="center" android:id="@id/tv_empty" android:visibility="invisible" android:text="@string/scanner_empty" style="@style/Text.Common" />
+    </FrameLayout>
+    <Button android:textSize="@dimen/textSize16" android:textColor="@color/purple_500" android:id="@id/btn_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancel" style="@style/Widget.MaterialComponents.Button.TextButton" />
+</LinearLayout>

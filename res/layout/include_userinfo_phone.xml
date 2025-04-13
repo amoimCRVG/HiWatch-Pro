@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xfkj.fitpro.view.XEditText android:id="@id/edt_phone" android:layoutDirection="ltr" style="@style/userinfo_sub_xedit_style"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

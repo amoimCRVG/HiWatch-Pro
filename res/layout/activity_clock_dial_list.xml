@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/clock_dial_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_title" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/TabLayout" android:background="@color/clock_dial_tab_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="43.0dip" app:tabBackground="@android:color/transparent" app:tabIndicatorColor="@color/clock_tab_indicat_color" app:tabIndicatorFullWidth="false" app:tabIndicatorHeight="2.0dip" app:tabRippleColor="@android:color/transparent" app:tabSelectedTextColor="@color/clock_tab_selected_color" app:tabTextColor="@color/white" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/ViewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

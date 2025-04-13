@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="enable_system_alarm_service_default">false</bool>
+    <bool name="enable_system_foreground_service_default">true</bool>
+    <bool name="enable_system_job_service_default">true</bool>
+    <bool name="fitsSystemWindows">true</bool>
+    <bool name="fitsSystemWindowsHome">false</bool>
+    <bool name="fitsSystemWindowsLongSit">true</bool>
+    <bool name="fitsSystemWindowsRank">true</bool>
+    <bool name="home_menu_1_dart_dark">false</bool>
+    <bool name="home_menu_1_fitwindow">true</bool>
+    <bool name="home_menu_2_dart_dark">false</bool>
+    <bool name="home_menu_2_fitwindow">true</bool>
+    <bool name="home_menu_3_dart_dark">false</bool>
+    <bool name="home_menu_3_fitwindow">true</bool>
+    <bool name="home_menu_4_dart_dark">false</bool>
+    <bool name="home_menu_4_fitwindow">true</bool>
+    <bool name="isAPPOfPublic">false</bool>
+    <bool name="isChargeWatchThemeAPP">false</bool>
+    <bool name="isDarkFont">false</bool>
+    <item type="bool" name="isDarkFontHistorySport">@bool/isDarkFont</item>
+    <bool name="isDarkFontRank">false</bool>
+    <bool name="isDarkFontStepShare">false</bool>
+    <bool name="isDarkLongSit">true</bool>
+    <bool name="isGetWhiteList">true</bool>
+    <bool name="isHiwatchPlusLayout">false</bool>
+    <bool name="isImmersionBar">false</bool>
+    <bool name="isImmersionBarBaseFragment">true</bool>
+    <bool name="isNotLogin">false</bool>
+    <bool name="isShowAdv">true</bool>
+    <bool name="isShowLogo2">false</bool>
+    <bool name="isShowNav2">false</bool>
+    <bool name="isShowSportLogo">false</bool>
+    <bool name="isShow_welcome_logo2">false</bool>
+    <bool name="keyboardEnable">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="navigationBarEnable">false</bool>
+    <bool name="workmanager_test_configuration">false</bool>
+</resources>

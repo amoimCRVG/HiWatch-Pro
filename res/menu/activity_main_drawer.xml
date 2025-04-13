@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@mipmap/ic_menu_settings" android:id="@id/nav_settings" android:title="@string/title_settings" />
+    <item android:icon="@mipmap/ic_menu_about" android:id="@id/nav_about" android:title="@string/rtk_title_about" />
+    <item android:icon="@mipmap/ic_menu_help" android:id="@id/nav_faq" android:title="@string/title_faq" />
+    <item android:icon="@mipmap/ic_menu_help" android:id="@id/nav_help" android:title="@string/rtk_title_help" />
+</menu>

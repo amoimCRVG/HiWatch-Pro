@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen android:title="Settings"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/pref_title_dfu" app:iconSpaceReserved="false">
+        <com.realsil.sdk.support.settings.RtkListPreference android:entries="@array/dfu_usb_gatt_endpoint_entries" android:title="@string/pref_title_dfu_usb_gatt_endpoint" android:key="dfu_usb_gatt_endpoint" android:summary="{v}" android:entryValues="@array/dfu_usb_gatt_endpoint_values" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

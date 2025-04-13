@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luck.picture.lib.widget.SquareRelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/fiv" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/iv_del" android:paddingLeft="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_delete_menu" android:scaleType="centerInside" android:layout_alignTop="@id/fiv" android:layout_alignRight="@id/fiv" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_duration" android:background="@drawable/picture_icon_shadow_bg" android:paddingLeft="5.0dip" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="00:00" android:drawableLeft="@drawable/picture_icon_video" android:drawablePadding="5.0dip" android:layout_alignLeft="@id/fiv" android:layout_alignRight="@id/fiv" android:layout_alignBottom="@id/fiv" />
+</com.luck.picture.lib.widget.SquareRelativeLayout>

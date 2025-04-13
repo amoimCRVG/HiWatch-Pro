@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_date_title" />
+    <ScrollView android:id="@id/mhbScroll" android:padding="12.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_50" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-3.0dip">
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="193.0dip" style="@style/sleep_top_container_style">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:id="@id/rl_top_left" android:layout_width="145.0dip" android:layout_height="145.0dip" android:layout_marginLeft="18.0dip" android:layout_centerVertical="true">
+                        <xfkj.fitpro.view.CircleProgressOfSleep android:id="@id/sleepCirclePb" android:layout_width="fill_parent" android:layout_height="fill_parent" app:isShowPercentText="false" app:progress="30" app:ringColor="@color/sober_sleep_background" app:ringWidth="10.0dip" />
+                        <xfkj.fitpro.view.RxRunTextView android:textSize="29.0sp" android:textStyle="bold" android:textColor="@color/sleep_more_txt2_color" android:id="@id/m_sleep_qk_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:maxWidth="@dimen/dp_100" android:text="@string/none" android:drawableTop="@mipmap/home_sleep_icon" android:drawablePadding="@dimen/dp_5" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/textview_marquee_style" />
+                        <xfkj.fitpro.view.RxRunTextView android:textSize="@dimen/sp_12" android:textColor="@color/textColorGray" android:id="@id/tv_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10" android:maxWidth="60.0dip" android:text="@string/sleep_quality_tag" android:layout_below="@id/m_sleep_qk_txt" android:layout_centerHorizontal="true" style="@style/textview_marquee_style" />
+                    </RelativeLayout>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="50.0dip" android:layout_marginTop="@dimen/dp_10" android:layout_toRightOf="@id/rl_top_left">
+                        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:id="@id/m_dsleep_icon" android:background="@drawable/shape_sleep_deep" style="@style/sleep_status_label_style" />
+                            <xfkj.fitpro.view.RxRunTextView android:text="@string/deep_sleep_txt" style="@style/moresleep_status_style" />
+                            <TextView android:id="@id/m_deep_sleep_bfb" style="@style/moresleep_status_content_style" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:id="@id/m_ssleep_icon" android:background="@drawable/shape_sleep_shadow" style="@style/sleep_status_label_style" />
+                            <xfkj.fitpro.view.RxRunTextView android:text="@string/somnolence_sleep_txt" style="@style/moresleep_status_style" />
+                            <TextView android:id="@id/m_somnolence_sleep_bfb" style="@style/moresleep_status_content_style" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <TextView android:id="@id/m_sosleep_icon" android:background="@drawable/shape_sleep_awake" style="@style/sleep_status_label_style" />
+                            <xfkj.fitpro.view.RxRunTextView android:text="@string/sober_txt" style="@style/moresleep_status_style" />
+                            <TextView android:id="@id/tv_sober_times_percent" style="@style/moresleep_status_content_style" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" style="@style/common_cardview_style">
+                <LinearLayout android:orientation="vertical" android:id="@id/sleep_day_box" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/dp_20" android:paddingRight="@dimen/dp_20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+                            <LinearLayout android:orientation="horizontal" android:id="@id/m_sChartLinear" android:layout_width="fill_parent" android:layout_height="87.0dip" />
+                            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:gravity="left" android:id="@id/m_start_sleep_time" style="@style/sleep_more_tv1_style" />
+                                <TextView android:gravity="right" android:id="@id/m_end_sleep_time" style="@style/sleep_more_tv1_style" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/sp_20" android:textColor="@color/sleep_more_txt5_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/m_total_sleep_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/_00_00" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dp_10" android:layout_marginTop="@dimen/dp_10">
+                            <TextView android:id="@id/m_deep_sleep_bgview" android:background="@color/deep_sleep_background" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                            <TextView android:id="@id/m_somnolence_sleep_bgview" android:background="@color/somnolence_sleep_background" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                            <TextView android:id="@id/m_sober_sleep_bgview" android:background="@color/sober_sleep_background" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/dp_8" android:paddingBottom="@dimen/dp_5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/sleep_more_txt5_color" android:gravity="center" android:id="@id/m_deep_sleep_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/_00_00" android:layout_weight="1.0" />
+                            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/sleep_more_txt5_color" android:gravity="center" android:id="@id/m_somnolence_sleep_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/_00_00" android:layout_weight="1.0" />
+                            <TextView android:textSize="@dimen/sp_16" android:textColor="@color/sleep_more_txt5_color" android:gravity="center" android:id="@id/m_sober_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/_00_00" android:layout_weight="1.0" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:text="@string/deep_sleep_txt" style="@style/more_sleep_textview1_style" />
+                            <TextView android:text="@string/somnolence_sleep_txt" style="@style/more_sleep_textview1_style" />
+                            <TextView android:text="@string/sober_txt" style="@style/more_sleep_textview1_style" />
+                        </LinearLayout>
+                        <View android:background="@color/red" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="35.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <TextView android:textColor="@color/sleep_more_txt3_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="15.0dip" android:text="@string/sleep_usage_warn" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

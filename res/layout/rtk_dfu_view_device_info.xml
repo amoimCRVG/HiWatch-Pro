@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/material_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/dfu_divider_horizontal_line" android:showDividers="middle" android:dividerPadding="@dimen/dfu_margin_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:padding="@dimen/dfu_margin_small" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target">
+        <TextView android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_text_target_name" />
+        <TextView android:gravity="end" android:id="@id/target_device_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DfuSubText" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:padding="@dimen/dfu_margin_small" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target">
+        <TextView android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_text_target_bd_address" />
+        <TextView android:gravity="end" android:id="@id/target_device_bd_addr" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DfuSubText" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:padding="@dimen/dfu_margin_small" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target">
+        <TextView android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_text_battery_level" />
+        <TextView android:textColor="@color/material_blue_500" android:gravity="end" android:id="@id/tv_battery_level" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DfuSubText" />
+        <ImageView android:id="@id/iv_battery_level" android:layout_width="25.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_battery_level" android:scaleType="centerInside" android:contentDescription="@null" android:layout_marginStart="@dimen/dfu_margin_small" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_image_version_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/dfu_divider_horizontal_line" android:showDividers="middle" android:dividerPadding="@dimen/dfu_margin_small">
+        <LinearLayout android:gravity="center_vertical" android:padding="@dimen/dfu_margin_small" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target">
+            <TextView android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_text_target_old_patch_version" />
+            <TextView android:gravity="end" android:id="@id/oldPatchVersionTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DfuSubText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/trTargetPatchBankInfo" android:padding="@dimen/dfu_margin_small" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target">
+            <TextView android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_text_target_pactch_bank" />
+            <TextView android:gravity="end" android:id="@id/tvTargetPatchBankInfo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DfuSubText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:padding="@dimen/dfu_margin_small" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target">
+            <TextView android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_text_target_old_fw_version" />
+            <TextView android:gravity="end" android:id="@id/oldFwVersionTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DfuSubText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/trTargetBankInfo" android:padding="@dimen/dfu_margin_small" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target">
+            <TextView android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_text_target_bank" />
+            <TextView android:gravity="end" android:id="@id/tvTargetBankInfo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DfuSubText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/trTargetPatchExtendInfo" android:padding="@dimen/dfu_margin_small" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target">
+            <TextView android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_text_target_patch_extend_version" />
+            <TextView android:gravity="end" android:id="@id/tvTargetPatchExtendInfo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DfuSubText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/trTargetAppData0Version" android:padding="@dimen/dfu_margin_small" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target">
+            <TextView android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_text_target_appData0_version" />
+            <TextView android:gravity="end" android:id="@id/tvTargetAppData0Version" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DfuSubText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/trTargetAppData1Version" android:padding="@dimen/dfu_margin_small" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target">
+            <TextView android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_text_target_appData1_version" />
+            <TextView android:gravity="end" android:id="@id/tvTargetAppData1Version" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DfuSubText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/trTargetAppData2Version" android:padding="@dimen/dfu_margin_small" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target">
+            <TextView android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_text_target_appData2_version" />
+            <TextView android:gravity="end" android:id="@id/tvTargetAppData2Version" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DfuSubText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/trTargetAppData3Version" android:padding="@dimen/dfu_margin_small" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target">
+            <TextView android:textColor="@color/material_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rtk_dfu_text_target_appData3_version" />
+            <TextView android:gravity="end" android:id="@id/tvTargetAppData3Version" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/DfuSubText" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/image_version_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

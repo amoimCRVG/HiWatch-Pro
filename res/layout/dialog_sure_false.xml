@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/shape_round_white" android:paddingTop="16.5dip" android:layout_width="280.0dip" android:layout_height="180.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+    <TextView android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+    <TextView android:textSize="18.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_content" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="240.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:text="是否退出登录？" />
+    <TextView android:id="@id/textView12" android:background="#ffd9d9d9" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="30.0dip" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_cancel" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="取消" android:layout_weight="1.0" />
+        <TextView android:id="@id/textView10" android:background="#ffd9d9d9" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0dip" android:textColor="#ff333333" android:gravity="center" android:id="@id/tv_sure" android:layout_width="0.0dip" android:layout_height="50.0dip" android:text="确认" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

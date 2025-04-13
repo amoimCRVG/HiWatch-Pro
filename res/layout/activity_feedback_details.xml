@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/feedback_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_title" />
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="@color/feedback_txt_color1" android:id="@id/tv_my_advice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="400.0dip" android:text="@string/my_adv" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textColor="@color/feedback_txt_color1" android:id="@id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2019-10-11" android:layout_alignParentLeft="true" />
+            <TextView android:textColor="@color/feedback_txt_color1" android:id="@id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已处理" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/feedback_txt_color1" android:id="@id/tv_my_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="bbbbbbbbbbbbbbbbbbbbbbbbbbbb" />
+        <TextView android:textColor="@android:color/holo_blue_bright" android:id="@id/tv_my_scan_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/scan_pic" />
+        <TextView android:textColor="@color/feedback_txt_color1" android:id="@id/tv_customer_adv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/customer_reply" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/replys" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_select_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_title" android:background="@drawable/bg_select_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/选择升级设备" android:layout_centerInParent="true" />
+        <ProgressBar android:id="@id/progress_bar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:indeterminate="false" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" style="@style/Widget.AppCompat.ProgressBar" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_bonded_devices" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimary" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/已配对的设备列表" />
+        <ListView android:id="@id/lv_bonded_devices" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_weight="3.0">
+        <TextView android:textSize="14.0sp" android:textColor="@color/colorPrimary" android:id="@id/tv_tip" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/扫描的设备列表" />
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_below="@id/tv_tip" />
+    </RelativeLayout>
+    <Button android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/btn_cancel" android:background="@drawable/bg_select_bottom" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/取消" style="?android:buttonBarButtonStyle" />
+</LinearLayout>

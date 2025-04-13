@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/DfuBottomSheetDialog" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:background="@color/colorPrimary" layout="@layout/rtk_toolbar" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/mRecyclerView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/dfu_margin_medium" android:paddingEnd="@dimen/dfu_margin_medium" />
+</LinearLayout>

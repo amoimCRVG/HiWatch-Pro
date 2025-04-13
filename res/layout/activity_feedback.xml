@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_title" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <EditText android:textSize="15.0sp" android:textColor="@color/feedback_txt_color1" android:textColorHint="@color/feedback_txt_color1" android:gravity="top" android:id="@id/edt_feedback" android:background="@color/feedback_bg_color" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="192.0dip" android:layout_marginTop="10.0dip" android:hint="@string/default_feedback_hint" android:lineSpacingExtra="12.0dip" />
+        <LinearLayout android:orientation="vertical" android:background="@color/feedback_bg_color" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minHeight="115.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/feedback_txt_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_choose_feedback_pic" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:overScrollMode="never" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

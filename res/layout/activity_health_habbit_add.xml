@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_title" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/tabLayout" android:background="@color/habbit_add_tab_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/habbit_add_tab_indicatorcolor_color" app:tabIndicatorHeight="2.0dip" app:tabRippleColor="@color/transparent" app:tabSelectedTextColor="@color/habbit_add_tab_select_txt_color" app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" app:tabTextColor="@color/habbit_add_tab_unselect_txt_color" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

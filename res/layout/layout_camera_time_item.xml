@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/linear_underline" android:paddingLeft="12.0dip" android:paddingTop="12.0dip" android:paddingBottom="@dimen/dp_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/sp_16" android:textColor="@color/default_black_color" android:gravity="left" android:id="@id/labTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="10秒" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/labCheck" android:paddingRight="@dimen/dp_10" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/unchecked" android:layout_alignParentRight="true" />
+</RelativeLayout>

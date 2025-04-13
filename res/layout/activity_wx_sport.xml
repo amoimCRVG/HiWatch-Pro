@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_chunk" layout="@layout/title_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/wxqrcodebox" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/wxqrcode" android:layout_width="@dimen/dp_220" android:layout_height="@dimen/dp_220" android:layout_margin="@dimen/dp_15" android:src="@drawable/xfkj" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="@dimen/dp_240" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_10">
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/wx_bd1" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/wx_bd2" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/wx_bd3" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dp_20" android:text="@string/wx_jb" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/wx_jbff" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/wx_jb1" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/wx_jb2" />
+            <TextView android:textSize="@dimen/sp_14" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/wx_jb3" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" layout="@layout/include_toolbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/textSize18" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/tv_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/device_name" />
+            <TextView android:textSize="@dimen/textSize14" android:textColor="@color/textColorGray" android:layout_gravity="center_horizontal" android:id="@id/tv_device_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mac_address" />
+            <RadioButton android:textStyle="bold" android:id="@id/rb_net" android:paddingLeft="6.0dip" android:visibility="gone" android:layout_marginTop="16.0dip" android:text="网络下载升级文件" android:layout_marginStart="16.0dip" style="@style/Text.Common" />
+            <RelativeLayout android:id="@id/rl_chip_model" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/btn_height" android:layout_marginStart="21.0dip" android:layout_marginEnd="19.0dip">
+                <TextView android:id="@id/tv_chip_model" android:text="芯片型号：" android:layout_centerVertical="true" style="@style/Text.Common" />
+                <EditText android:textSize="@dimen/textSize16" android:textColor="@color/textColorDef" android:id="@id/et_chip_model" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toStartOf="@id/btn_sure" android:layout_toEndOf="@id/tv_chip_model" />
+                <Button android:textColor="@color/white" android:id="@id/btn_sure" android:background="@color/purple_500" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="确认" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:layout_alignParentEnd="true" />
+                <View android:background="@color/dividerColor" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_alignParentBottom="true" android:layout_alignStart="@id/et_chip_model" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_dfu_file" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/btn_height" android:layout_marginTop="12.0dip" android:layout_marginStart="21.0dip" android:layout_marginEnd="19.0dip">
+                <TextView android:id="@id/tv_dfu_file" android:text="DFU文件：" android:layout_centerVertical="true" style="@style/Text.Common" />
+                <TextView android:textSize="@dimen/textSize14" android:textColor="@color/textColorDef" android:gravity="center_vertical" android:id="@id/tv_dfu_file_name" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="芯片型号_项目名_项目编号_版本号" android:layout_toStartOf="@id/iv_file_expload" android:layout_toEndOf="@id/tv_dfu_file" />
+                <ImageView android:id="@id/iv_file_expload" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow_down_24" android:paddingStart="16.0dip" android:paddingEnd="15.0dip" android:layout_alignParentEnd="true" />
+                <View android:background="@color/dividerColor" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_alignParentBottom="true" android:layout_alignStart="@id/et_file_name" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/textSize14" android:textColor="@color/textColorDef" android:id="@id/tv_update_desc" android:visibility="gone" android:layout_marginTop="8.0dip" android:layout_marginStart="21.0dip" android:layout_marginEnd="21.0dip" style="@style/Text.Common" />
+            <RadioButton android:textStyle="bold" android:id="@id/rb_local" android:paddingLeft="6.0dip" android:visibility="gone" android:layout_marginTop="19.0dip" android:text="本地加载升级文件" android:layout_marginStart="16.0dip" style="@style/Text.Common" />
+            <TableLayout android:orientation="vertical" android:id="@id/tl_file" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="21.0dip">
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:text="@string/file_name" style="@style/Text.Common" />
+                    <TextView android:id="@id/tv_file_name" style="@style/Text.Common" />
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:text="@string/file_size" style="@style/Text.Common" />
+                    <TextView android:id="@id/tv_file_size" style="@style/Text.Common" />
+                </TableRow>
+                <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <TextView android:text="@string/file_state" style="@style/Text.Common" />
+                    <TextView android:id="@id/tv_file_status" style="@style/Text.Common" />
+                </TableRow>
+            </TableLayout>
+            <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/btn_select_file" android:background="@color/purple_500" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_margin="19.0dip" android:text="选择文件" />
+            <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/btn_update" android:background="@color/purple_500" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_margin="19.0dip" android:text="开始升级" />
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" style="?android:progressBarStyleHorizontal" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" />
+</LinearLayout>

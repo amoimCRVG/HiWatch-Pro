@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_title" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="10.0dip" android:paddingTop="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="@string/wx_upload_tips_content" />
+        <FrameLayout android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginTop="20.0dip">
+            <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+            <ImageView android:id="@id/img_qrcode" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/colorPrimaryDark" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_reget_qrcode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/get_qrcode_failed" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

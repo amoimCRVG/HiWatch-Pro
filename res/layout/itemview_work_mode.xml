@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0sp" android:textColor="#ff787878" android:gravity="center" android:orientation="horizontal" android:id="@id/name" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="@dimen/rtk_touch_target" android:text="" style="@style/TvView"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

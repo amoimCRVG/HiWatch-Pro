@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_chunk" layout="@layout/title_layout" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rlv" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@id/hand_lr_box" android:background="@color/white" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/hand_Left" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/device_switch_lr" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerVertical="true" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ff333333" android:id="@id/labhandName" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lr_hand_wearing" android:layout_toRightOf="@id/hand_Left" android:layout_centerVertical="true" />
+                <Switch android:id="@id/hand_status" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="8.0dip" android:checked="true" android:textOn="右" android:textOff="左" android:thumb="@drawable/switch_custom_thumb_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:switchTextAppearance="@style/SwitchTheme" android:track="@drawable/switch_custom_track_selector" android:showText="true" />
+                <View android:id="@id/hndline" android:background="@color/search_line_gray2" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="42.0dip" android:layout_marginTop="8.0dip" android:layout_below="@id/labhandName" />
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/frm_loadding" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@id/progressBar3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyle" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

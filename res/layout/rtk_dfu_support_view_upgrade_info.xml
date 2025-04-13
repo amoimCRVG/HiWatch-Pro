@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/material_white" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/rtk_dfu_support_headerTextColor" android:id="@id/message" android:padding="@dimen/margin_small" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small" android:progress="0" android:layout_below="@id/message" android:layout_alignTop="@id/progress_number" android:layout_alignBottom="@id/progress_number" android:foregroundGravity="center_vertical" android:layout_toStartOf="@id/progress_number" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <TextView android:textColor="@color/material_black" android:gravity="center" android:id="@id/progress_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_small" android:layout_below="@id/message" android:layout_alignParentEnd="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_throughput" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:divider="@color/colorPrimary" android:layout_below="@id/progress" android:showDividers="middle" android:dividerPadding="@dimen/margin_small" android:paddingStart="@dimen/margin_small" android:paddingEnd="@dimen/margin_small">
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="12.0sp" android:textColor="@color/material_black" android:gravity="bottom|center" android:id="@id/title_aver_speed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="平均速率" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/material_red_500" android:gravity="center" android:id="@id/text_aver_speed" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="--" android:layout_below="@id/title_aver_speed" />
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="12.0sp" android:textColor="@color/material_black" android:gravity="bottom|center" android:id="@id/title_real_speed" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="实时速率" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/material_green_500" android:gravity="center" android:id="@id/text_real_speed" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="--" android:layout_below="@id/title_real_speed" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_title" />
+    <androidx.appcompat.widget.SearchView android:textColor="#ff909090" android:id="@id/searchView" android:background="@drawable/shape_music_search" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" app:queryHint="@string/search_friend" app:searchIcon="@mipmap/voin_sech" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/tablayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="43.0dip" app:tabIndicatorFullWidth="false" />
+    <FrameLayout android:id="@id/fragmentContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" />
+</LinearLayout>

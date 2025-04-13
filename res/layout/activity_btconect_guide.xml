@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_horizontal" android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/tv_txt_content1" android:layout_marginTop="10.0dip" android:text="您的设备还支持语音传输，如蓝牙通话，蓝牙音乐等功能" style="@style/bt_connect_guide_page_tv1_style" />
+            <TextView android:id="@id/tv_txt_content2" android:text="打开双模" style="@style/bt_connect_guide_page_tv2_style" />
+            <ImageView android:id="@id/img_show" android:layout_width="204.0dip" android:layout_height="265.0dip" android:src="@mipmap/bp_dm" />
+            <TextView android:id="@id/tv_txt_content3" android:layout_marginTop="20.0dip" android:text="设备开机后，若5分钟内WellAudlo蓝牙都未连接，会自动关闭，需要在设备端-找到双模菜单进入-设置打开后-再进入手机系统设置-打开手机蓝牙-搜索到WellAudlo设备-点击进行连接。此做法更能节省设备端的电量。" style="@style/bt_connect_guide_page_tv1_style" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+    <Button android:id="@id/btn_understand" style="@style/bt_connect_guide_page_tv3_style" />
+    <TextView android:id="@id/tv_later_say" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" style="@style/bt_connect_guide_page_tv4_style" />
+</androidx.appcompat.widget.LinearLayoutCompat>
