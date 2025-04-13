@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>错误码</title>
+    <link rel="stylesheet" href="../style.css" type="text/css"/>
+</head>
+<body>
+<!--<p>错误码</p>-->
+<!--<h1>错误码</h1>-->
+
+<section>
+    <h1>256</h1>
+    <p>Can\’t connect the device enter OTA mode</p>
+    <ol>
+        <li>Radio environment is extremely bad</li>
+        <li>Android connect BLE device with BR/EDR channel</li>
+        <li>Bluedroid exception</li>
+    </ol>
+</section>
+
+
+<section>
+    <h1>257</h1>
+    <p>IO error of read file</p>
+    <ol>
+        <li>I/O error, the probability is very low</li>
+    </ol>
+</section>
+
+<section>
+    <h1>0x0105 (261)</h1>
+    <p>Send command but no callback</p>
+    <ol>
+        <li>Disconnect when send command</li>
+        <li>If is Android4.4 system, get the error when half in upgrade, may be Bluedroid have
+            GKI get buffer exception, please use the patch version up to 9377(The function of update
+            connection parameters is added), or use the mobile phone above Android5.0
+        </li>
+    </ol>
+</section>
+
+<section>
+    <h1>0x0106 (262)</h1>
+    <p>Service mismatch</p>
+    <ol>
+        <li>Connect error device, the probability is very low</li>
+    </ol>
+</section>
+
+<section>
+    <h1>0x0109 (265)</h1>
+    <p>Can\’t scan the device</p>
+    <ol>
+        <li>Radio environment is extremely bad</li>
+        <li>Sent to the command of “entering OTA mode”, but can\’t scan the device, the
+            possible reasons is the device are not yet enter the OTA mode</li>
+    </ol>
+</section>
+
+<section>
+    <h1>0x0112 (274)</h1>
+    <p>User did\’t avtive image update</p>
+    <ol>
+        <li>Occur when user did\’t active the image update in silent OTA update</li>
+    </ol>
+</section>
+
+<section>
+    <h1>0x0113 (275)</h1>
+    <p>IO error of read file</p>
+    <ol>
+        <li>I/O error, the probability is very low</li>
+    </ol>
+</section>
+
+
+<section>
+    <h1>0x0485 (1157)</h1>
+    <p>GATT_ERROR</p>
+    <ol>
+        <li>write command failed</li>
+        <li>[Controller] Connection Timeout</li>
+    </ol>
+</section>
+
+<section>
+    <h1>0x1006 (4102)</h1>
+    <p>ic type conflict</p>
+    <ol>
+        <li>image is not match with ic</li>
+    </ol>
+</section>
+
+
+
+
+
+</body>
+</html>
