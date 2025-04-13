@@ -204,7 +204,7 @@
         <meta-data android:name="UMENG_CHANNEL" android:value="hiwatchPro"/>
         <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="Rb9C4HCwYC6dhUhHKFhX3Z9mD20lfPu5"/>
         <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote"/>
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDeKF6XaKcF2EErEHxlCpLB-72m44k4U30"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="Vasco da Gama"/>
         <receiver android:enabled="true" android:exported="true" android:name="xfkj.fitpro.receiver.LanguageChangeReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.LOCALE_CHANGED"/>
